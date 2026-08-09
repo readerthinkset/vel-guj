@@ -4829,7 +4829,42 @@
       "transliteration": "Sachet kshano, tamne sampurna banave.",
       "category": "Health",
       "generated_at": "2026-08-09T17:36:42.957657"
+    },
+    {
+      "english": "Morning light, fills the room.",
+      "gujarati": "સવારનો પ્રકાશ, ઓરડામાં ફેલાય છે.",
+      "transliteration": "Savaarno prakash, ordaama felaay chhe.",
+      "category": "Time",
+      "generated_at": "2026-08-09T20:29:36.984823"
+    },
+    {
+      "english": "Evening shadows, grow long.",
+      "gujarati": "સાંજની છાયા, લાંબી થાય છે.",
+      "transliteration": "Saanjni chhaaya, laambi thaay chhe.",
+      "category": "Time",
+      "generated_at": "2026-08-09T20:29:36.984834"
+    },
+    {
+      "english": "Midnight quiet, descends softly.",
+      "gujarati": "મધ્યરાત્રિની શાંતિ, ધીમેથી ઉતરે છે.",
+      "transliteration": "Madhyaratrini shanti, dhime-thi utare chhe.",
+      "category": "Time",
+      "generated_at": "2026-08-09T20:29:36.984835"
+    },
+    {
+      "english": "Dawn breaks, a new beginning.",
+      "gujarati": "પરોઢ ફાટે છે, એક નવી શરૂઆત.",
+      "transliteration": "Parodh phaate chhe, ek navi sharu'aat.",
+      "category": "Time",
+      "generated_at": "2026-08-09T20:29:36.984837"
+    },
+    {
+      "english": "Past memories, linger awhile.",
+      "gujarati": "ભૂતકાળની યાદો, થોડીવાર ટકી રહે છે.",
+      "transliteration": "Bhootkaalni yaado, thodivaar taki rahe chhe.",
+      "category": "Time",
+      "generated_at": "2026-08-09T20:29:36.984838"
     }
   ],
-  "last_updated": "2026-08-09T17:36:42.957658"
+  "last_updated": "2026-08-09T20:29:36.984839"
 }
