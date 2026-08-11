@@ -5074,7 +5074,42 @@
       "transliteration": "Shanti shodho, tamari andar.",
       "category": "Positive Life",
       "generated_at": "2026-08-11T00:52:47.264223"
+    },
+    {
+      "english": "Walk ahead, towards the river.",
+      "gujarati": "આગળ ચાલો, નદી તરફ.",
+      "transliteration": "Aagal chalo, nadi taraf.",
+      "category": "Directions",
+      "generated_at": "2026-08-11T13:22:38.163145"
+    },
+    {
+      "english": "Please, take a seat, right here.",
+      "gujarati": "કૃપા કરીને, બેસી જાઓ, અહીં.",
+      "transliteration": "Krupa karine, besi jaao, ahi.",
+      "category": "Directions",
+      "generated_at": "2026-08-11T13:22:38.163158"
+    },
+    {
+      "english": "Stop now, we need to think.",
+      "gujarati": "હવે રોકાઈ જાઓ, આપણે વિચારવું પડશે.",
+      "transliteration": "Have rokaai jaao, aapne vicharvu padshe.",
+      "category": "Directions",
+      "generated_at": "2026-08-11T13:22:38.163160"
+    },
+    {
+      "english": "Touch the wall, gently.",
+      "gujarati": "દીવાલને સ્પર્શ કરો, ધીમેથી.",
+      "transliteration": "Deewalne sparsh karo, dheemethi.",
+      "category": "Directions",
+      "generated_at": "2026-08-11T13:22:38.163162"
+    },
+    {
+      "english": "Look around, notice everything.",
+      "gujarati": "આજુબાજુ જુઓ, બધું નોંધો.",
+      "transliteration": "Aajubaju juo, badhu nondho.",
+      "category": "Directions",
+      "generated_at": "2026-08-11T13:22:38.163163"
     }
   ],
-  "last_updated": "2026-08-11T00:52:47.264225"
+  "last_updated": "2026-08-11T13:22:38.163165"
 }
