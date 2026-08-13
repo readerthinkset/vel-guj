@@ -5389,7 +5389,42 @@
       "transliteration": "Tamne maline, aanand thayo.",
       "category": "Basic Phrases",
       "generated_at": "2026-08-13T13:27:49.512958"
+    },
+    {
+      "english": "Someone needs immediate attention, fast.",
+      "gujarati": "કોઈને, તરત, મદદ જોઈએ.",
+      "transliteration": "Koinee, tarat, madad joiae.",
+      "category": "Emergency",
+      "generated_at": "2026-08-13T14:53:43.441667"
+    },
+    {
+      "english": "There's a medical problem, here.",
+      "gujarati": "તબીબી, સમસ્યા, અહીં છે.",
+      "transliteration": "Tabibi, samasya, ahi chhe.",
+      "category": "Emergency",
+      "generated_at": "2026-08-13T14:53:43.441685"
+    },
+    {
+      "english": "I need your help, urgently.",
+      "gujarati": "મને, તમારી, મદદ, જોઈએ, અત્યારે.",
+      "transliteration": "Mane, tamari, madad, joiae, atyare.",
+      "category": "Emergency",
+      "generated_at": "2026-08-13T14:53:43.441687"
+    },
+    {
+      "english": "Is anyone there? Shout out.",
+      "gujarati": "કોઈ, ત્યાં, છે? બોલાવો.",
+      "transliteration": "Koi, tya, chhe? Bolavo.",
+      "category": "Emergency",
+      "generated_at": "2026-08-13T14:53:43.441688"
+    },
+    {
+      "english": "This is an emergency, please.",
+      "gujarati": "આ, કટોકટી, છે, મહેરબાની.",
+      "transliteration": "Aa, katokati, chhe, maherbani.",
+      "category": "Emergency",
+      "generated_at": "2026-08-13T14:53:43.441689"
     }
   ],
-  "last_updated": "2026-08-13T13:27:49.512960"
+  "last_updated": "2026-08-13T14:53:43.441691"
 }
