@@ -5319,7 +5319,42 @@
       "transliteration": "Tamara taraf, hunfali shubhechchhao moklu chhu.",
       "category": "Holidays",
       "generated_at": "2026-08-12T20:41:15.003827"
+    },
+    {
+      "english": "A crisp morning, perfect for a walk.",
+      "gujarati": "સવાર તાજી, ચાલવા માટે ઉત્તમ.",
+      "transliteration": "Savaar taaji, chaalvaa maate uttam.",
+      "category": "Weather",
+      "generated_at": "2026-08-13T01:00:21.001582"
+    },
+    {
+      "english": "The wind, whispers through the trees.",
+      "gujarati": "પવન, વૃક્ષોમાંથી ગુંજે છે.",
+      "transliteration": "Pavan, vruksho-maathi gunje chhe.",
+      "category": "Weather",
+      "generated_at": "2026-08-13T01:00:21.001595"
+    },
+    {
+      "english": "After the storm, a rainbow appeared.",
+      "gujarati": "તોફાન પછી, મેઘધનુષ્ય દેખાયું.",
+      "transliteration": "Toofaan pachhee, meghdhanushya dekhaayu.",
+      "category": "Weather",
+      "generated_at": "2026-08-13T01:00:21.001597"
+    },
+    {
+      "english": "The sun, warms our faces gently.",
+      "gujarati": "સૂર્ય, આપણા ચહેરાઓને હળવાશથી ગરમ કરે છે.",
+      "transliteration": "Soorya, aapnaa chehraa-one halvaash-thi garam kare chhe.",
+      "category": "Weather",
+      "generated_at": "2026-08-13T01:00:21.001599"
+    },
+    {
+      "english": "Winter chill, nips at the air.",
+      "gujarati": "શિયાળાની ઠંડક, હવામાં ચૂંટાય છે.",
+      "transliteration": "Shiyaalaani thandak, hawaa-ma choontay chhe.",
+      "category": "Weather",
+      "generated_at": "2026-08-13T01:00:21.001601"
     }
   ],
-  "last_updated": "2026-08-12T20:41:15.003829"
+  "last_updated": "2026-08-13T01:00:21.001602"
 }
