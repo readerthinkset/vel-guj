@@ -6229,7 +6229,42 @@
       "transliteration": "Maro pitrai, vishvaasu, rahasyo vaanche.",
       "category": "Relationships",
       "generated_at": "2026-08-18T13:00:24.447934"
+    },
+    {
+      "english": "This curry, is exceptionally good.",
+      "gujarati": "આ શાક, ખૂબ જ સરસ છે.",
+      "transliteration": "Aa shaak, khoob j saras chhe.",
+      "category": "Restaurant",
+      "generated_at": "2026-08-18T14:29:39.589435"
+    },
+    {
+      "english": "May I, have, the naan, please?",
+      "gujarati": "શું, મને, નાન, મળશે?",
+      "transliteration": "Shu, mane, naan, malshe?",
+      "category": "Restaurant",
+      "generated_at": "2026-08-18T14:29:39.589446"
+    },
+    {
+      "english": "We'd like, to try, something new.",
+      "gujarati": "અમે, કંઈક, નવું, અજમાવીશું.",
+      "transliteration": "Ame, kaike, navu, ajmaavishu.",
+      "category": "Restaurant",
+      "generated_at": "2026-08-18T14:29:39.589447"
+    },
+    {
+      "english": "Is this, spicy, for you?",
+      "gujarati": "આ, તીખું, છે, તમારા માટે?",
+      "transliteration": "Aa, tikhu, chhe, tamara mate?",
+      "category": "Restaurant",
+      "generated_at": "2026-08-18T14:29:39.589449"
+    },
+    {
+      "english": "Could, you explain, this dish?",
+      "gujarati": "શું, તમે, આ વાનગી, સમજાવશો?",
+      "transliteration": "Shu, tame, aa vaangi, samjaavsho?",
+      "category": "Restaurant",
+      "generated_at": "2026-08-18T14:29:39.589450"
     }
   ],
-  "last_updated": "2026-08-18T13:00:24.447935"
+  "last_updated": "2026-08-18T14:29:39.589451"
 }
