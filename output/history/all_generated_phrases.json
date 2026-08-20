@@ -6614,7 +6614,42 @@
       "transliteration": "Mandir sthapatya, prerana aape.",
       "category": "Culture",
       "generated_at": "2026-08-20T17:35:10.277413"
+    },
+    {
+      "english": "Just a little bit, more please.",
+      "gujarati": "થોડુંક વધારે, આપો ને.",
+      "transliteration": "Thoduk vadhare, aapo ne.",
+      "category": "Numbers",
+      "generated_at": "2026-08-20T20:25:58.799396"
+    },
+    {
+      "english": "About ten, in total.",
+      "gujarati": "કુલ મળીને, દસ જેટલા.",
+      "transliteration": "Kul maline, das jetla.",
+      "category": "Numbers",
+      "generated_at": "2026-08-20T20:25:58.799405"
+    },
+    {
+      "english": "Only one, person arrived.",
+      "gujarati": "ફક્ત એક, વ્યક્તિ આવી.",
+      "transliteration": "Fakt ek, vyakti aavi.",
+      "category": "Numbers",
+      "generated_at": "2026-08-20T20:25:58.799407"
+    },
+    {
+      "english": "Two birds, on a branch.",
+      "gujarati": "બે પક્ષીઓ, ડાળી પર.",
+      "transliteration": "Be pakshio, daali par.",
+      "category": "Numbers",
+      "generated_at": "2026-08-20T20:25:58.799408"
+    },
+    {
+      "english": "Three colors, in the flag.",
+      "gujarati": "ત્રણ રંગો, ધ્વજમાં.",
+      "transliteration": "Tran rango, dhwajma.",
+      "category": "Numbers",
+      "generated_at": "2026-08-20T20:25:58.799409"
     }
   ],
-  "last_updated": "2026-08-20T17:35:10.277415"
+  "last_updated": "2026-08-20T20:25:58.799410"
 }
