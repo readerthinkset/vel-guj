@@ -6719,7 +6719,42 @@
       "transliteration": "Thando dhummas, parvat par.",
       "category": "Nature",
       "generated_at": "2026-08-21T13:01:58.188082"
+    },
+    {
+      "english": "A heavy shower, is expected.",
+      "gujarati": "ભારે વરસાદ, પડશે.",
+      "transliteration": "Bhaare varsaad, padshe.",
+      "category": "Weather",
+      "generated_at": "2026-08-21T14:38:51.352863"
+    },
+    {
+      "english": "The heat, is intense.",
+      "gujarati": "ગરમી, ખૂબ છે.",
+      "transliteration": "Garmi, khoob chhe.",
+      "category": "Weather",
+      "generated_at": "2026-08-21T14:38:51.352874"
+    },
+    {
+      "english": "Dew drops, sparkle on leaves.",
+      "gujarati": "ઝાકળના ટીપાં, ચમકે છે.",
+      "transliteration": "Zaakalna tipaa, chamke chhe.",
+      "category": "Weather",
+      "generated_at": "2026-08-21T14:38:51.352875"
+    },
+    {
+      "english": "A cool breeze, is refreshing.",
+      "gujarati": "ઠંડી હવા, તાજગી આપે છે.",
+      "transliteration": "Thandi hawaa, taajgi aape chhe.",
+      "category": "Weather",
+      "generated_at": "2026-08-21T14:38:51.352876"
+    },
+    {
+      "english": "The sky, is overcast now.",
+      "gujarati": "આકાશ, હવે ઘેરાયેલું છે.",
+      "transliteration": "Aakaash, have gheraayelu chhe.",
+      "category": "Weather",
+      "generated_at": "2026-08-21T14:38:51.352877"
     }
   ],
-  "last_updated": "2026-08-21T13:01:58.188083"
+  "last_updated": "2026-08-21T14:38:51.352878"
 }
