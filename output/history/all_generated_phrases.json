@@ -6789,7 +6789,42 @@
       "transliteration": "Hu ek bhet shodhi rahyo chhu.",
       "category": "Shopping",
       "generated_at": "2026-08-21T17:34:22.470850"
+    },
+    {
+      "english": "Breathe in, deeply.",
+      "gujarati": "ઊંડો શ્વાસ લો.",
+      "transliteration": "Undō śvās lō.",
+      "category": "Directions",
+      "generated_at": "2026-08-21T20:23:19.651743"
+    },
+    {
+      "english": "Follow, the winding path.",
+      "gujarati": "આ વાંકીચૂંકી કેડીને, અનુસરો.",
+      "transliteration": "Ā vānkīcūṅkī kēḍīnē, anusrō.",
+      "category": "Directions",
+      "generated_at": "2026-08-21T20:23:19.651755"
+    },
+    {
+      "english": "Place your hand, here.",
+      "gujarati": "તમારો હાથ, અહીં મૂકો.",
+      "transliteration": "Tamārō hāth, ahīṁ mūkō.",
+      "category": "Directions",
+      "generated_at": "2026-08-21T20:23:19.651757"
+    },
+    {
+      "english": "Pour water, gently.",
+      "gujarati": "ધીમેથી, પાણી રેડો.",
+      "transliteration": "Dhīmēthī, pāṇī rēḍō.",
+      "category": "Directions",
+      "generated_at": "2026-08-21T20:23:19.651759"
+    },
+    {
+      "english": "Step aside, please.",
+      "gujarati": "કૃપા કરીને, બાજુ પર ખસો.",
+      "transliteration": "Kr̥pā karīnē, bāju par khasō.",
+      "category": "Directions",
+      "generated_at": "2026-08-21T20:23:19.651760"
     }
   ],
-  "last_updated": "2026-08-21T17:34:22.470851"
+  "last_updated": "2026-08-21T20:23:19.651762"
 }
