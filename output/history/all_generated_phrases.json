@@ -6929,7 +6929,42 @@
       "transliteration": "Vicharo ne vaheva do, nadi ni jem.",
       "category": "Creativity",
       "generated_at": "2026-08-22T14:18:13.487504"
+    },
+    {
+      "english": "The bee buzzes, a tiny hum.",
+      "gujarati": "મધમાખી ગુંજે છે, એક નાનકડો ગુંજારવ.",
+      "transliteration": "Madhmakhi gunje chhe, ek nanakdo gunjarav.",
+      "category": "Animals",
+      "generated_at": "2026-08-22T17:25:42.037683"
+    },
+    {
+      "english": "A snake slithers, low to the ground.",
+      "gujarati": "સાપ સરકે છે, જમીન પર નીચો.",
+      "transliteration": "Saap sarke chhe, jameen par nicho.",
+      "category": "Animals",
+      "generated_at": "2026-08-22T17:25:42.037690"
+    },
+    {
+      "english": "The horse neighs, a strong call.",
+      "gujarati": "ઘોડો હણહણે છે, એક જોરદાર હાકલ.",
+      "transliteration": "Ghodo hanhane chhe, ek jordar hakal.",
+      "category": "Animals",
+      "generated_at": "2026-08-22T17:25:42.037692"
+    },
+    {
+      "english": "A frog croaks, by the pond.",
+      "gujarati": "દેડકો ડ્રાઉં ડ્રાઉં કરે છે, તળાવ પાસે.",
+      "transliteration": "Dedko draun draun kare chhe, talav paase.",
+      "category": "Animals",
+      "generated_at": "2026-08-22T17:25:42.037693"
+    },
+    {
+      "english": "The sheep bleats, for its mother.",
+      "gujarati": "ઘેટું બેબે કરે છે, પોતાની માતા માટે.",
+      "transliteration": "Ghetu bebe kare chhe, potani mata mate.",
+      "category": "Animals",
+      "generated_at": "2026-08-22T17:25:42.037694"
     }
   ],
-  "last_updated": "2026-08-22T14:18:13.487506"
+  "last_updated": "2026-08-22T17:25:42.037696"
 }
