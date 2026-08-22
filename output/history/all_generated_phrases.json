@@ -6859,7 +6859,42 @@
       "transliteration": "Khoob, saras sugandh aave chhe.",
       "category": "Basic Phrases",
       "generated_at": "2026-08-22T00:35:22.730172"
+    },
+    {
+      "english": "Sunrise paints, the eastern sky.",
+      "gujarati": "સૂર્યોદય, પૂર્વ આકાશને રંગે.",
+      "transliteration": "Suryoday, purva akashne range.",
+      "category": "Time",
+      "generated_at": "2026-08-22T12:53:14.232344"
+    },
+    {
+      "english": "Golden hour, warms the land.",
+      "gujarati": "સુવર્ણકાળ, ધરતીને ઉષ્મા આપે.",
+      "transliteration": "Suvarnakaal, dhartine ushma aape.",
+      "category": "Time",
+      "generated_at": "2026-08-22T12:53:14.232352"
+    },
+    {
+      "english": "Midday sun, shines so bright.",
+      "gujarati": "મધ્યાહન સૂર્ય, ખૂબ તેજસ્વી ચમકે.",
+      "transliteration": "Madhyahan surya, khoob tejasvi chamke.",
+      "category": "Time",
+      "generated_at": "2026-08-22T12:53:14.232354"
+    },
+    {
+      "english": "Afternoon breeze, whispers secrets.",
+      "gujarati": "બપોરની હવા, રહસ્યો કહે છે.",
+      "transliteration": "Bapor ni hava, rahasyo kahe chhe.",
+      "category": "Time",
+      "generated_at": "2026-08-22T12:53:14.232355"
+    },
+    {
+      "english": "Dusk settles, peace arrives.",
+      "gujarati": "સાંજ ઢળે, શાંતિ આવે.",
+      "transliteration": "Saanj dhale, shanti aave.",
+      "category": "Time",
+      "generated_at": "2026-08-22T12:53:14.232357"
     }
   ],
-  "last_updated": "2026-08-22T00:35:22.730174"
+  "last_updated": "2026-08-22T12:53:14.232358"
 }
