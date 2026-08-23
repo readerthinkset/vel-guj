@@ -7069,7 +7069,42 @@
       "transliteration": "Tamaro shant nishchay, ghanu kahi jaay chhe.",
       "category": "Strength",
       "generated_at": "2026-08-23T14:20:04.059493"
+    },
+    {
+      "english": "This flavor, is quite, unique.",
+      "gujarati": "આ સ્વાદ, ખૂબ, અનોખો છે.",
+      "transliteration": "Aa swaad, khoob, anokho chhe.",
+      "category": "Restaurant",
+      "generated_at": "2026-08-23T17:25:42.019001"
+    },
+    {
+      "english": "What's, your favorite, dish?",
+      "gujarati": "તમારી, મનપસંદ, વાનગી કઈ છે?",
+      "transliteration": "Tamari, manpasand, vangi kai chhe?",
+      "category": "Restaurant",
+      "generated_at": "2026-08-23T17:25:42.019013"
+    },
+    {
+      "english": "We're looking, for something, light.",
+      "gujarati": "અમે, કંઈક, હલકું શોધી રહ્યા છીએ.",
+      "transliteration": "Ame, kaink, halku shodhi rahya chhie.",
+      "category": "Restaurant",
+      "generated_at": "2026-08-23T17:25:42.019014"
+    },
+    {
+      "english": "Can, I have, the fork, please?",
+      "gujarati": "મને, કાંટો, મળશે, કૃપા કરીને?",
+      "transliteration": "Mane, kaanto, malshe, krupa karine?",
+      "category": "Restaurant",
+      "generated_at": "2026-08-23T17:25:42.019015"
+    },
+    {
+      "english": "This is, so satisfying, to eat.",
+      "gujarati": "આ ખાવામાં, ખૂબ, સંતોષકારક છે.",
+      "transliteration": "Aa khavama, khoob, santoshkarak chhe.",
+      "category": "Restaurant",
+      "generated_at": "2026-08-23T17:25:42.019016"
     }
   ],
-  "last_updated": "2026-08-23T14:20:04.059494"
+  "last_updated": "2026-08-23T17:25:42.019018"
 }
