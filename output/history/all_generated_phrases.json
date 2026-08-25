@@ -7314,7 +7314,42 @@
       "transliteration": "uploadni gati, adbhut.",
       "category": "Technology",
       "generated_at": "2026-08-24T20:28:20.567418"
+    },
+    {
+      "english": "Go ahead, Gujarati is waiting.",
+      "gujarati": "આગળ વધો, ગુજરાતી રાહ જુએ છે.",
+      "transliteration": "Aagal vadho, Gujarati raah jue chhe.",
+      "category": "Confidence",
+      "generated_at": "2026-08-25T13:00:56.153016"
+    },
+    {
+      "english": "Try it out, you'll surprise yourself.",
+      "gujarati": "પ્રયાસ કરો, તમે તમારી જાતને આશ્ચર્યચકિત કરશો.",
+      "transliteration": "Prayas karo, tame tamari jaatne aashcharyachakit karsho.",
+      "category": "Confidence",
+      "generated_at": "2026-08-25T13:00:56.153026"
+    },
+    {
+      "english": "One word, then another, you're speaking.",
+      "gujarati": "એક શબ્દ, પછી બીજો, તમે બોલી રહ્યા છો.",
+      "transliteration": "Ek shabd, pachhi bijo, tame boli rahya chho.",
+      "category": "Confidence",
+      "generated_at": "2026-08-25T13:00:56.153028"
+    },
+    {
+      "english": "Don't hold back, let it come out.",
+      "gujarati": "પાછળ ન રહો, તેને બહાર આવવા દો.",
+      "transliteration": "Paachhal na raho, tene bahaar aavva do.",
+      "category": "Confidence",
+      "generated_at": "2026-08-25T13:00:56.153030"
+    },
+    {
+      "english": "Your Gujarati, finding its own rhythm.",
+      "gujarati": "તમારી ગુજરાતી, પોતાની લય શોધી રહી છે.",
+      "transliteration": "Tamari Gujarati, potani lay shodhi rahi chhe.",
+      "category": "Confidence",
+      "generated_at": "2026-08-25T13:00:56.153031"
     }
   ],
-  "last_updated": "2026-08-24T20:28:20.567419"
+  "last_updated": "2026-08-25T13:00:56.153033"
 }
