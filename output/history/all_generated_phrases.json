@@ -7559,7 +7559,42 @@
       "transliteration": "Patang unche ude, aakaash saame.",
       "category": "Culture",
       "generated_at": "2026-08-26T14:41:03.488320"
+    },
+    {
+      "english": "Stop, right there!",
+      "gujarati": "ઊભા રહો, ત્યાં જ!",
+      "transliteration": "Ubha raho, tya j!",
+      "category": "Emergency",
+      "generated_at": "2026-08-26T19:09:37.978299"
+    },
+    {
+      "english": "Something is wrong, urgently.",
+      "gujarati": "કંઈક ખોટું છે, તરત.",
+      "transliteration": "Kaink khotu chhe, tarat.",
+      "category": "Emergency",
+      "generated_at": "2026-08-26T19:09:37.978308"
+    },
+    {
+      "english": "I need a doctor, fast.",
+      "gujarati": "મને ડૉક્ટર જોઈએ, ઝડપથી.",
+      "transliteration": "Mane doctor joie, jhadapti.",
+      "category": "Emergency",
+      "generated_at": "2026-08-26T19:09:37.978310"
+    },
+    {
+      "english": "Please stay calm, everyone.",
+      "gujarati": "કૃપા કરીને શાંત રહો, બધા.",
+      "transliteration": "Krupa karine shant raho, badha.",
+      "category": "Emergency",
+      "generated_at": "2026-08-26T19:09:37.978311"
+    },
+    {
+      "english": "Is this location safe?",
+      "gujarati": "આ જગ્યા સુરક્ષિત છે?",
+      "transliteration": "Aa jagya surakshit chhe?",
+      "category": "Emergency",
+      "generated_at": "2026-08-26T19:09:37.978313"
     }
   ],
-  "last_updated": "2026-08-26T14:41:03.488322"
+  "last_updated": "2026-08-26T19:09:37.978314"
 }
