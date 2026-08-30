@@ -8224,7 +8224,42 @@
       "transliteration": "Malaidaar naaliyer nu doodh, ushnakatibandhiya aalingan.",
       "category": "Food",
       "generated_at": "2026-08-30T16:32:57.910816"
+    },
+    {
+      "english": "This waiter, is very attentive.",
+      "gujarati": "આ વેઇટર, ખૂબ ધ્યાન આપે છે.",
+      "transliteration": "Aa waiter, khoob dhyan aape chhe.",
+      "category": "Restaurant",
+      "generated_at": "2026-08-30T17:54:05.870305"
+    },
+    {
+      "english": "Could, I get, the bill, please?",
+      "gujarati": "શું, હું બિલ, લઈ શકું, મહેરબાની કરીને?",
+      "transliteration": "Shu, hu bill, lai shaku, meherbani karine?",
+      "category": "Restaurant",
+      "generated_at": "2026-08-30T17:54:05.870316"
+    },
+    {
+      "english": "This bread, is so fluffy.",
+      "gujarati": "આ રોટલી, ખૂબ નરમ છે.",
+      "transliteration": "Aa rotli, khoob naram chhe.",
+      "category": "Restaurant",
+      "generated_at": "2026-08-30T17:54:05.870317"
+    },
+    {
+      "english": "The music, is quite soothing.",
+      "gujarati": "સંગીત, ખૂબ શાંત છે.",
+      "transliteration": "Sangeet, khoob shaant chhe.",
+      "category": "Restaurant",
+      "generated_at": "2026-08-30T17:54:05.870318"
+    },
+    {
+      "english": "We'll, be back, soon.",
+      "gujarati": "અમે, જલ્દી, પાછા આવીશું.",
+      "transliteration": "Ame, jaldi, pachha aavishu.",
+      "category": "Restaurant",
+      "generated_at": "2026-08-30T17:54:05.870319"
     }
   ],
-  "last_updated": "2026-08-30T16:32:57.910818"
+  "last_updated": "2026-08-30T17:54:05.870321"
 }
