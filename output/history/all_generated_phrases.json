@@ -8469,7 +8469,42 @@
       "transliteration": "Patthar gabade, dhal parthi.",
       "category": "Nature",
       "generated_at": "2026-08-31T23:38:14.635662"
+    },
+    {
+      "english": "Sudden problem, can you assist?",
+      "gujarati": "અચાનક તકલીફ, મદદ કરશો?",
+      "transliteration": "Achanak taklif, madad karsho?",
+      "category": "Emergency",
+      "generated_at": "2026-09-01T02:28:17.998242"
+    },
+    {
+      "english": "Something's not right, look here.",
+      "gujarati": "કંઈક ગરબડ છે, અહીં જુઓ.",
+      "transliteration": "Kaik garb ad chhe, ahi juo.",
+      "category": "Emergency",
+      "generated_at": "2026-09-01T02:28:17.998251"
+    },
+    {
+      "english": "Need someone urgent, right now.",
+      "gujarati": "તરત કોઈ જોઈએ, અત્યારે.",
+      "transliteration": "Tarat koi joīe, atyāre.",
+      "category": "Emergency",
+      "generated_at": "2026-09-01T02:28:17.998253"
+    },
+    {
+      "english": "Is anyone able, to lend a hand?",
+      "gujarati": "કોઈ મદદ કરી શકે છે?",
+      "transliteration": "Koi madad kari shake chhe?",
+      "category": "Emergency",
+      "generated_at": "2026-09-01T02:28:17.998254"
+    },
+    {
+      "english": "Quickly, this situation needs attention.",
+      "gujarati": "ઝડપથી, આ પરિસ્થિતિ ધ્યાન માંગે છે.",
+      "transliteration": "Zadpathi, aa paristhiti dhyan mange chhe.",
+      "category": "Emergency",
+      "generated_at": "2026-09-01T02:28:17.998255"
     }
   ],
-  "last_updated": "2026-08-31T23:38:14.635664"
+  "last_updated": "2026-09-01T02:28:17.998257"
 }
