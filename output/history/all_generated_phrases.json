@@ -8714,7 +8714,42 @@
       "transliteration": "Aanandi divaso, tamara mate.",
       "category": "Holidays",
       "generated_at": "2026-09-02T16:26:49.708131"
+    },
+    {
+      "english": "The air, feels heavy, today.",
+      "gujarati": "હવા, આજે, ભારે લાગે છે.",
+      "transliteration": "Hava, aaje, bhare lage chhe.",
+      "category": "Weather",
+      "generated_at": "2026-09-02T17:35:26.321398"
+    },
+    {
+      "english": "Look up, the sky, is turning grey.",
+      "gujarati": "ઉપર જુઓ, આકાશ, રાખોડી થઈ રહ્યું છે.",
+      "transliteration": "Upar juo, aakash, rakhodi thai rahyu chhe.",
+      "category": "Weather",
+      "generated_at": "2026-09-02T17:35:26.321409"
+    },
+    {
+      "english": "A light mist, is settling, gently.",
+      "gujarati": "હળવું ઝાકળ, ધીમે ધીમે, પથરાઈ રહ્યું છે.",
+      "transliteration": "Halvu zakal, dhime dhime, pathrai rahyu chhe.",
+      "category": "Weather",
+      "generated_at": "2026-09-02T17:35:26.321411"
+    },
+    {
+      "english": "The sun, is peeking, through clouds.",
+      "gujarati": "સૂર્ય, વાદળોમાંથી, ડોકિયું કરી રહ્યો છે.",
+      "transliteration": "Surya, vadalomanthi, dokiyu kari rahyo chhe.",
+      "category": "Weather",
+      "generated_at": "2026-09-02T17:35:26.321412"
+    },
+    {
+      "english": "A sudden gust, of wind, startled me.",
+      "gujarati": "પવનનો, એકાએક, ઝાપટો, મને ડરાવી ગયો.",
+      "transliteration": "Pavan no, ek aek, zhapto, mane daravi gayo.",
+      "category": "Weather",
+      "generated_at": "2026-09-02T17:35:26.321414"
     }
   ],
-  "last_updated": "2026-09-02T16:26:49.708133"
+  "last_updated": "2026-09-02T17:35:26.321416"
 }
