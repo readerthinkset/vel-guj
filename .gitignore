@@ -4,6 +4,8 @@ output/images/
 output/backgrounds/
 output/daily_summary_*.json
 output/upload_results_*.json
+output/run_*.log
+output/test_run_*
 __pycache__/
 *.pyc
 .env

@@ -23,15 +23,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
-      - name: Download phrase history (if exists)
-        uses: actions/download-artifact@v4
-        id: download-history
-        continue-on-error: true
-        with:
-          name: phrase-history
-          path: output/history/
-
       - name: Initialize history if not found
         run: |
           mkdir -p output/history

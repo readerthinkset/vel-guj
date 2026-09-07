@@ -10,6 +10,7 @@ import json
 import random
 import asyncio
 import subprocess
+import re
 from datetime import datetime
 from pathlib import Path
 from dotenv import load_dotenv
@@ -149,52 +150,77 @@ RECENT_CATEGORIES_FILE = HISTORY_DIR / "recent_categories.json"
 MAX_RECENT_CATEGORIES = 25
 
 
+def normalize_phrase(text: str) -> str:
+    """Normalize phrase text for robust anti-duplicate matching"""
+    return re.sub(r'[^a-z0-9]', '', str(text).lower().strip())
+
+
 def load_phrase_history():
     if PHRASE_HISTORY_FILE.exists():
-        with open(PHRASE_HISTORY_FILE, "r", encoding="utf-8") as f:
-            return json.load(f)
+        try:
+            with open(PHRASE_HISTORY_FILE, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception as e:
+            print(f"[history] Warning: Failed to parse history ({e}), resetting")
+            return {"phrases": [], "last_updated": None}
     return {"phrases": [], "last_updated": None}
 
 
 def save_phrase_history(data):
     data["last_updated"] = datetime.now().isoformat()
+    PHRASE_HISTORY_FILE.parent.mkdir(parents=True, exist_ok=True)
     with open(PHRASE_HISTORY_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
 
 
-def is_phrase_used(english_phrase):
-    history = load_phrase_history()
-    english_lower = english_phrase.lower().strip()
-    for p in history.get("phrases", []):
-        if p.get("english", "").lower().strip() == english_lower:
-            return True
-    return False
+def get_used_phrase_set(history=None) -> set:
+    if history is None:
+        history = load_phrase_history()
+    return {normalize_phrase(p.get("english", "")) for p in history.get("phrases", []) if p.get("english")}
+
+
+def is_phrase_used(english_phrase: str, used_set: set = None) -> bool:
+    norm = normalize_phrase(english_phrase)
+    if not norm:
+        return True
+    if used_set is not None:
+        return norm in used_set
+    return norm in get_used_phrase_set()
 
 
 def add_phrases_to_history(phrases, category):
     history = load_phrase_history()
-    lang_key = "gujarati"
+    existing_norms = {normalize_phrase(p.get("english", "")) for p in history.get("phrases", []) if p.get("english")}
+    added = 0
     for phrase in phrases:
-        history["phrases"].append({
-            "english": phrase["english"],
-            lang_key: phrase[lang_key],
-            "transliteration": phrase.get("transliteration", ""),
-            "category": category,
-            "generated_at": datetime.now().isoformat()
-        })
+        norm = normalize_phrase(phrase.get("english", ""))
+        if norm and norm not in existing_norms:
+            history["phrases"].append({
+                "english": phrase["english"].strip(),
+                "gujarati": phrase.get("gujarati", "").strip(),
+                "transliteration": phrase.get("transliteration", "").strip(),
+                "category": category,
+                "generated_at": datetime.now().isoformat()
+            })
+            existing_norms.add(norm)
+            added += 1
     save_phrase_history(history)
-    print(f"[history] Added {len(phrases)} phrases to history (total: {len(history['phrases'])})")
+    print(f"[history] Added {added} phrases to history (total: {len(history['phrases'])})")
 
 
 def load_recent_categories():
     if RECENT_CATEGORIES_FILE.exists():
-        with open(RECENT_CATEGORIES_FILE, "r", encoding="utf-8") as f:
-            return json.load(f)
+        try:
+            with open(RECENT_CATEGORIES_FILE, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            return {"recent_categories": [], "last_updated": None}
     return {"recent_categories": [], "last_updated": None}
 
 
 def save_recent_categories(data):
     data["last_updated"] = datetime.now().isoformat()
+    RECENT_CATEGORIES_FILE.parent.mkdir(parents=True, exist_ok=True)
     with open(RECENT_CATEGORIES_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
 
@@ -218,60 +244,175 @@ def get_available_category():
     return selected
 
 
+CATEGORY_FALLBACK_BANKS = {
+    "Travel": [
+        {"english": "Where can I find a taxi?", "gujarati": "મને ટેક્સી ક્યાંથી મળશે?", "transliteration": "Mane taxi kyanthi malshe?"},
+        {"english": "How far is the railway station?", "gujarati": "રેલવે સ્ટેશન કેટલું દૂર છે?", "transliteration": "Railway station ketlu door chhe?"},
+        {"english": "Can you show me the way?", "gujarati": "શું તમે મને રસ્તો બતાવી શકશો?", "transliteration": "Shu tame mane rasto batavi shaksho?"},
+        {"english": "I want to visit the heritage site.", "gujarati": "મારે ઐતિહાસિક સ્થળની મુલાકાત લેવી છે.", "transliteration": "Mare aithihasik sthalni mulakat levi chhe."},
+        {"english": "Is this the bus to Ahmedabad?", "gujarati": "શું આ અમદાવાદ જતી બસ છે?", "transliteration": "Shu aa Ahmedabad jati bus chhe?"},
+        {"english": "Please book two tickets for us.", "gujarati": "કૃપા કરીને અમારા માટે બે ટિકિટ બુક કરો.", "transliteration": "Krupa karine amara mate be ticket book karo."},
+        {"english": "The view here is magnificent.", "gujarati": "અહીંનો નજારો ખૂબ ભવ્ય છે.", "transliteration": "Ahino najaro khub bhavya chhe."},
+        {"english": "What time does the train arrive?", "gujarati": "ટ્રેન કેટલા વાગ્યે આવશે?", "transliteration": "Train ketla vagye aavshe?"},
+    ],
+    "Restaurant": [
+        {"english": "Please bring the menu card.", "gujarati": "કૃપા કરીને મેનુ કાર્ડ લાવો.", "transliteration": "Krupa karine menu card laavo."},
+        {"english": "What is today's special dish?", "gujarati": "આજની ખાસ વાનગી કઈ છે?", "transliteration": "Aajni khas vaangi kai chhe?"},
+        {"english": "The Gujarati thali was delicious.", "gujarati": "ગુજરાતી થાળી ખૂબ સ્વાદિષ્ટ હતી.", "transliteration": "Gujarati thali khub swadisht hati."},
+        {"english": "Please serve water with ice.", "gujarati": "કૃપા કરીને બરફવાળું પાણી આપો.", "transliteration": "Krupa karine barfvalu pani aapo."},
+        {"english": "We would like less spicy food.", "gujarati": "અમને ઓછું તીખું ભોજન જોઈશે.", "transliteration": "Amane ochhu teekhu bhojan joishe."},
+        {"english": "Can we get the bill, please?", "gujarati": "શું અમે બિલ મેળવી શકીએ?", "transliteration": "Shu ame bill melvi shakie?"},
+        {"english": "I love the sweet and savory flavors.", "gujarati": "મને ખાટો-મીઠો સ્વાદ બહુ ગમે છે.", "transliteration": "Mane khato-meetho swad bahu game chhe."},
+    ],
+    "Shopping": [
+        {"english": "How much does this item cost?", "gujarati": "આ વસ્તુની કિંમત કેટલી છે?", "transliteration": "Aa vastuni kimmat ketli chhe?"},
+        {"english": "Do you have a different size?", "gujarati": "શું તમારી પાસે બીજી સાઈઝ છે?", "transliteration": "Shu tamari pase beeji size chhe?"},
+        {"english": "Can you give a discount?", "gujarati": "શું થોડું ડિસ્કાઉન્ટ મળશે?", "transliteration": "Shu thodu discount malshe?"},
+        {"english": "This traditional dress looks lovely.", "gujarati": "આ પરંપરાગત પોશાક ખૂબ સુંદર છે.", "transliteration": "Aa paramparagat poshak khub sundar chhe."},
+        {"english": "I will pay with mobile payment.", "gujarati": "હું ઓનલાઇન પેમેન્ટ કરીશ.", "transliteration": "Hu online payment karish."},
+        {"english": "Please pack this carefully.", "gujarati": "કૃપા કરીને આને સાચવીને પેક કરો.", "transliteration": "Krupa karine aane saachvine pack karo."},
+    ],
+    "Greetings": [
+        {"english": "Welcome to Gujarat, friend.", "gujarati": "ગુજરાતમાં તમારું સ્વાગત છે, મિત્ર.", "transliteration": "Gujaratma tamaru swagat chhe, mitra."},
+        {"english": "Good morning, wishing you joy.", "gujarati": "શુભ સવાર, તમારો દિવસ આનંદમય રહે.", "transliteration": "Shubh savar, tamaro divas aanandmay rahe."},
+        {"english": "How has your day been?", "gujarati": "તમારો દિવસ કેવો રહ્યો?", "transliteration": "Tamaro divas kevo rahyo?"},
+        {"english": "Pleasure speaking with you today.", "gujarati": "આજે તમારી સાથે વાત કરીને આનંદ થયો.", "transliteration": "Aaje tamari sathe vaat karine aanand thayo."},
+        {"english": "Have a wonderful, restful evening.", "gujarati": "તમારી સાંજ શાંતિપૂર્ણ અને સુંદર રહે.", "transliteration": "Tamari saanjh shantipoorna ane sundar rahe."},
+    ],
+    "Motivation": [
+        {"english": "Every small effort counts.", "gujarati": "દરેક નાનો પ્રયાસ મહત્વનો છે.", "transliteration": "Darek nano prayas mahatvano chhe."},
+        {"english": "Courage begins with one step.", "gujarati": "હિંમત એક પગલાથી શરૂ થાય છે.", "transliteration": "Himmat ek paglathi sharu thay chhe."},
+        {"english": "Believe in your endless power.", "gujarati": "તમારી અસીમ શક્તિ પર વિશ્વાસ રાખો.", "transliteration": "Tamari aseem shakti par vishwas rakho."},
+        {"english": "Hard work always creates miracles.", "gujarati": "મહેનત હંમેશા ચમત્કાર સર્જે છે.", "transliteration": "Mehnat hamesha chamatkar sarje chhe."},
+        {"english": "Turn challenges into great wisdom.", "gujarati": "પડકારોને મહાન શાણપણમાં બદલો.", "transliteration": "Padkarone mahan shaanpanma badlo."},
+    ],
+    "Family Terms": [
+        {"english": "My family gathers every evening.", "gujarati": "મારો પરિવાર રોજ સાંજે ભેગો થાય છે.", "transliteration": "Maro parivar roj saanje bhego thay chhe."},
+        {"english": "Grandmother shares sweet childhood stories.", "gujarati": "દાદી બાળપણની મીઠી વાર્તાઓ કહે છે.", "transliteration": "Dadi baalpan-ni meethi vaartao kahe chhe."},
+        {"english": "My elder brother guides me.", "gujarati": "મારા મોટા ભાઈ મને માર્ગદર્શન આપે છે.", "transliteration": "Mara mota bhai mane margdarshan aape chhe."},
+        {"english": "Parents are our greatest blessing.", "gujarati": "માતાપિતા આપણા સૌથી મોટા આશીર્વાદ છે.", "transliteration": "Matapita aapna sauthi mota aashirvad chhe."},
+        {"english": "We celebrate festivals together happily.", "gujarati": "આપણે તહેવારો સાથે મળીને આનંદથી ઉજવીએ છીએ.", "transliteration": "Aapne tahevaro sathe maline aanandthi ujviye chhiye."},
+    ],
+    "Weather": [
+        {"english": "The breeze from the river is cool.", "gujarati": "નદી પરથી આવતો પવન ઠંડો છે.", "transliteration": "Nadi parthi aavto pavan thando chhe."},
+        {"english": "Dark clouds promise refreshing rain.", "gujarati": "કાળા વાદળો તાજા વરસાદની ખાતરી આપે છે.", "transliteration": "Kaala vaadalo taaja varsadni khatri aape chhe."},
+        {"english": "The golden sun warms the morning.", "gujarati": "સોનેરી સૂર્ય સવારને હૂંફાળી બનાવે છે.", "transliteration": "Soneri surya savarne hoonfali banave chhe."},
+        {"english": "Winter mornings in Gujarat are crisp.", "gujarati": "ગુજરાતમાં શિયાળાની સવાર તાજગીભરી હોય છે.", "transliteration": "Gujaratma shiyalani savar taajgibhari hoy chhe."},
+    ],
+    "Wisdom": [
+        {"english": "Patience resolves what anger destroys.", "gujarati": "જે ક્રોધ બગાડે છે, તે ધીરજ સુધારે છે.", "transliteration": "Je krodh bagade chhe, te dhiraj sudhare chhe."},
+        {"english": "Kind words cost nothing at all.", "gujarati": "મીઠા વેણ બોલવામાં કશું ખર્ચાતું નથી.", "transliteration": "Meetha ven bolvama kashu kharchaatu nathi."},
+        {"english": "Truth shines brighter than the sun.", "gujarati": "સત્ય સૂર્ય કરતાં પણ વધુ ચમકે છે.", "transliteration": "Satya surya karta pan vadhu chamke chhe."},
+        {"english": "A calm mind finds every answer.", "gujarati": "શાંત મન દરેક પ્રશ્નનો ઉકેલ શોધે છે.", "transliteration": "Shaant man darek prashnano ukel shodhe chhe."},
+    ]
+}
+
+
+def get_fresh_fallback_phrases(category: str, num_phrases: int, used_set: set = None) -> list:
+    """Return category-appropriate fallback phrases when AI generation needs backup"""
+    if used_set is None:
+        used_set = get_used_phrase_set()
+
+    cat_pool = CATEGORY_FALLBACK_BANKS.get(category, [])
+    generic_pool = [
+        {"english": "A quiet heart discovers peace.", "gujarati": "શાંત હૃદય શાંતિની શોધ કરે છે.", "transliteration": "Shaant hruday shantini shodh kare chhe."},
+        {"english": "Learn something meaningful every single day.", "gujarati": "રોજ કંઈક અર્થપૂર્ણ અને નવું શીખો.", "transliteration": "Roj kaink arthapoorna ane navu shikho."},
+        {"english": "Cherish the moments with loved ones.", "gujarati": "સ્નેહીજનો સાથેની પળોને યાદગાર બનાવો.", "transliteration": "Snehijano satheni palone yaadgar banavo."},
+        {"english": "Great accomplishments take patience and care.", "gujarati": "મહાન સિદ્ધિઓ માટે ધીરજ અને ખંત જરૂરી છે.", "transliteration": "Mahan siddhio mate dhiraj ane khant jaroori chhe."},
+        {"english": "Smile freely and brighten someone's path.", "gujarati": "ખુલ્લા દિલથી હસો અને બીજાના ચહેરા પર સ્મિત લાવો.", "transliteration": "Khulla dilthi haso ane beejana chehra par smit laavo."},
+        {"english": "True strength lies in gentle kindness.", "gujarati": "સાચી તાકાત નમ્રતા અને દયામાં છે.", "transliteration": "Sachi taakat namrata ane dayama chhe."},
+        {"english": "Stay curious and keep exploring forward.", "gujarati": "નવું જાણવાની જિજ્ઞાસા સદા જીવંત રાખો.", "transliteration": "Navu jaanvani jignasa sada jeevant rakho."},
+        {"english": "Every morning brings a brand new hope.", "gujarati": "દરેક પ્રભાત એક નવી આશા લઈને આવે છે.", "transliteration": "Darek prabhaat ek navi aasha laine aave chhe."},
+        {"english": "Speak with honesty, live with dignity.", "gujarati": "પ્રામાણિકતાથી બોલો, સ્વાભિમાનથી જીવો.", "transliteration": "Pramaniktathi bolo, swabhimaanthi jeevo."},
+        {"english": "Good company makes every journey delightful.", "gujarati": "સારો સાથ સફરને વધુ સુંદર બનાવે છે.", "transliteration": "Saaro saath safarne vadhu sundar banave chhe."},
+    ]
+
+    other_pools = []
+    for cat, items in CATEGORY_FALLBACK_BANKS.items():
+        if cat != category:
+            other_pools.extend(items)
+
+    candidates = [p for p in (cat_pool + generic_pool + other_pools) if normalize_phrase(p["english"]) not in used_set]
+    random.shuffle(candidates)
+
+    if len(candidates) >= num_phrases:
+        return candidates[:num_phrases]
+
+    result = list(candidates)
+    while len(result) < num_phrases:
+        idx = len(result) + 1
+        result.append({
+            "english": f"Embrace the beauty of Gujarati phrase {idx}.",
+            "gujarati": f"ગુજરાતી ભાષાના સૌંદર્યનો આનંદ માણો.",
+            "transliteration": "Gujarati bhashana saundaryano aanand mano."
+        })
+    return result[:num_phrases]
+
+
 def generate_phrases(category_english: str, num_phrases: int = 5) -> list:
     category_native = CATEGORIES_NATIVE.get(category_english, category_english)
-    max_attempts = 3
-
     history = load_phrase_history()
-    recent_english = [p["english"] for p in history.get("phrases", []) if p.get("category") == category_english][-30:]
+    all_phrases = history.get("phrases", [])
+    used_set = {normalize_phrase(p.get("english", "")) for p in all_phrases if p.get("english")}
 
+    cat_phrases = [p["english"] for p in all_phrases if p.get("category") == category_english]
+    recent_cat = cat_phrases[-25:]
+    recent_all = [p["english"] for p in all_phrases[-25:]]
+    combined_avoid = list(dict.fromkeys(recent_cat + recent_all))
+
+    collected = []
+    models_to_try = [AI_MODEL or "gemini-fast", "openai-fast", "openai", "mistral"]
+    seen_models = set()
+    models = [m for m in models_to_try if m and not (m in seen_models or seen_models.add(m))]
+
+    max_attempts = 5
     for attempt in range(max_attempts):
+        needed = num_phrases - len(collected)
+        if needed <= 0:
+            break
+
+        model = models[attempt % len(models)]
+        print(f"[content] Attempt {attempt + 1}/{max_attempts} using model '{model}' (need {needed} more phrases)...")
+
         try:
             import requests
             url = "https://gen.pollinations.ai/v1/chat/completions"
-            headers = {
-                "Authorization": f"Bearer {POLLINATIONS_API_KEY}",
-                "Content-Type": "application/json"
-            }
+            headers = {"Content-Type": "application/json"}
+            if POLLINATIONS_API_KEY and str(POLLINATIONS_API_KEY).strip() and str(POLLINATIONS_API_KEY).strip() != "None":
+                headers["Authorization"] = f"Bearer {str(POLLINATIONS_API_KEY).strip()}"
 
+            current_avoid = list(dict.fromkeys(combined_avoid + [p["english"] for p in collected]))
+            avoid_sample = current_avoid[-30:]
             avoid_text = ""
-            if recent_english:
-                avoid_text = "\nABSOLUTELY AVOID these already-used phrases:\n" + "\n".join(f"- {p}" for p in recent_english)
+            if avoid_sample:
+                avoid_text = "\nDO NOT repeat any of these previously used phrases:\n" + "\n".join(f"- {p}" for p in avoid_sample)
 
-            prompt = f"""Create {num_phrases * 6} unique and creative {category_english} phrases for English speakers learning Gujarati.{avoid_text}
+            prompt = f"""Create 10 fresh, natural, and creative {category_english} phrases for English speakers learning Gujarati.{avoid_text}
 
-IMPORTANT RULES FOR NATURAL SPEECH:
-1. Keep phrases SHORT (5-12 words max per language)
-2. Add NATURAL PAUSES using commas (e.g., "Dream big, start small")
-3. Use punctuation for breathing room in TTS
-4. Avoid long run-on sentences
-5. Each phrase should be speakable in 3-5 seconds
-6. Gujarati text should be CLEAN - use standard Gujarati script
-7. Do NOT include multiple versions or slashes - just ONE clean Gujarati translation
-8. Transliteration should be in Roman script for pronunciation
-9. BE CREATIVE AND VARIED - do NOT repeat themes from the avoid list
+CRITICAL RULES:
+1. Every phrase must be directly relevant to the theme: {category_english} ({category_native}).
+2. Keep phrases SHORT and punchy (4-10 words per phrase).
+3. Add NATURAL PAUSES using commas for realistic pronunciation.
+4. Gujarati translation must be in standard Gujarati script (ગુજરાતી લિપિ).
+5. Transliteration must be in clear Romanized English script for pronunciation.
+6. Make every phrase completely UNIQUE and DIFFERENT from standard clichés.
 
-For each phrase:
-1. English phrase (with commas for natural pauses)
-2. Gujarati translation (in Gujarati script)
-3. Transliteration (Roman script pronunciation)
-
-Return as JSON array:
-[{{"english": "...", "gujarati": "...", "transliteration": "..."}}]
-
-IMPORTANT: Create FRESH, UNIQUE phrases that haven't been used before.
-IMPORTANT: Gujarati text must be clean - no slashes, no multiple versions."""
+Return ONLY a valid JSON array of objects with keys "english", "gujarati", and "transliteration".
+Example format:
+[
+  {{"english": "Let's explore the old bazaar.", "gujarati": "ચાલો જૂના બજારની મુલાકાત લઈએ.", "transliteration": "Chalo juna bajarni mulakat laiye."}}
+]"""
 
             payload = {
-                "model": AI_MODEL,
+                "model": model,
                 "messages": [
-                    {"role": "system", "content": "You are a Gujarati teacher. Create short, natural phrases with pauses. Each generation must produce completely different, creative phrases."},
+                    {"role": "system", "content": "You are an expert bilingual English-Gujarati teacher. Return ONLY raw valid JSON arrays."},
                     {"role": "user", "content": prompt}
                 ],
-                "temperature": min(0.95 + attempt * 0.03, 1.0)
+                "temperature": 0.95 + (attempt * 0.05)
             }
 
-            response = requests.post(url, headers=headers, json=payload, timeout=60)
+            response = requests.post(url, headers=headers, json=payload, timeout=45)
             response.raise_for_status()
 
             data = response.json()
@@ -283,101 +424,63 @@ IMPORTANT: Gujarati text must be clean - no slashes, no multiple versions."""
                 content = content.split("```")[1].split("```")[0].strip()
 
             phrases = json.loads(content)
+            if not isinstance(phrases, list):
+                print(f"[content] Model returned non-list response: {type(phrases)}")
+                continue
 
             for p in phrases:
+                if not isinstance(p, dict):
+                    continue
                 if "transliteration" not in p and "romaji" in p:
                     p["transliteration"] = p.pop("romaji")
                 if "gujarati" not in p:
-                    alt_keys = ["gujarati_text", "native", "translation", p.get("language", "")]
-                    for k in alt_keys:
+                    for k in ["gujarati_text", "native", "translation", p.get("language", "")]:
                         if k in p:
                             p["gujarati"] = p.pop(k)
                             break
-                if "gujarati" not in p:
+
+                eng = str(p.get("english", "")).strip()
+                guj = str(p.get("gujarati", "")).strip()
+                tra = str(p.get("transliteration", "")).strip()
+
+                if not eng or not guj:
+                    continue
+                if len(eng.split()) > 15:
                     continue
 
-            unique_phrases = []
-            for phrase in phrases:
-                if len(phrase["english"].split()) > 15:
+                norm_eng = normalize_phrase(eng)
+                if norm_eng in used_set:
+                    print(f"  [dedup] Skipping already used phrase: '{eng}'")
                     continue
-                if not is_phrase_used(phrase["english"]):
-                    unique_phrases.append(phrase)
-                if len(unique_phrases) >= num_phrases:
+
+                p_clean = {"english": eng, "gujarati": guj, "transliteration": tra}
+                collected.append(p_clean)
+                used_set.add(norm_eng)
+                combined_avoid.append(eng)
+
+                if len(collected) >= num_phrases:
                     break
 
-            if len(unique_phrases) >= num_phrases:
-                add_phrases_to_history(unique_phrases[:num_phrases], category_english)
-                return unique_phrases[:num_phrases]
-
-            print(f"[content] Attempt {attempt + 1}: API returned {len(phrases)} phrases, only {len(unique_phrases)} are new (need {num_phrases})")
-            for p in unique_phrases:
-                if p["english"] not in recent_english:
-                    recent_english.append(p["english"])
+            print(f"[content] Progress: {len(collected)}/{num_phrases} unique phrases collected")
+            if len(collected) >= num_phrases:
+                break
 
         except Exception as e:
-            print(f"[content] Attempt {attempt + 1} failed: {e}")
+            print(f"[content] Attempt {attempt + 1} ({model}) error: {e}")
 
-    print("[content] Using fallback phrases...")
-    return get_fresh_fallback_phrases(category_english, num_phrases)
+    if len(collected) >= num_phrases:
+        final_phrases = collected[:num_phrases]
+        add_phrases_to_history(final_phrases, category_english)
+        return final_phrases
 
+    print(f"[content] AI collected {len(collected)} phrases; filling {num_phrases - len(collected)} from fallback...")
+    needed = num_phrases - len(collected)
+    fallbacks = get_fresh_fallback_phrases(category_english, needed, used_set)
+    collected.extend(fallbacks)
 
-
-def get_fresh_fallback_phrases(category: str, num_phrases: int) -> list:
-    """Return simple English fallback phrases when AI generation fails"""
-    generic_fallbacks = [
-        {"english": "Hello, nice to meet you.", "gujarati": "\u0aa8\u0aae\u0ab8\u0acd\u0aa4\u0ac7, \u0aa4\u0aae\u0aa8\u0ac7 \u0aae\u0ab3\u0ac0\u0aa8\u0ac7 \u0a86\u0aa8\u0a82\u0aa6 \u0aa5\u0aaf\u0acb.", "transliteration": "Namaste, tamne maline aanand thayo."},
-        {"english": "Thank you very much.", "gujarati": "\u0a96\u0ac2\u0aac \u0a96\u0ac2\u0aac \u0a86\u0aad\u0abe\u0ab0.", "transliteration": "Khoob khoob aabhar."},
-        {"english": "Good morning, have a great day.", "gujarati": "\u0ab6\u0ac1\u0aad \u0ab8\u0ab5\u0abe\u0ab0, \u0aa4\u0aae\u0abe\u0ab0\u0acb \u0aa6\u0abf\u0ab5\u0ab8 \u0ab6\u0ac1\u0aad \u0ab0\u0ab9\u0ac7.", "transliteration": "Shubh savar, tamaro divas shubh rahe."},
-        {"english": "I love learning new languages.", "gujarati": "\u0aae\u0aa8\u0ac7 \u0aa8\u0ab5\u0ac0 \u0aad\u0abe\u0ab7\u0abe\u0a93 \u0ab6\u0ac0\u0a96\u0ab5\u0ac0 \u0a97\u0aae\u0ac7 \u0a9b\u0ac7.", "transliteration": "Mane navi bhashao shikhvi game chhe."},
-        {"english": "Never give up on your dreams.", "gujarati": "\u0aa4\u0aae\u0abe\u0ab0\u0abe \u0ab8\u0aaa\u0aa8\u0abe \u0a95\u0acd\u0aaf\u0abe\u0ab0\u0ac7\u0aaf \u0a9b\u0acb\u0aa1\u0ab6\u0acb \u0aa8\u0ab9\u0ac0\u0a82.", "transliteration": "Tamara sapna kyareyi chhodsho nahi."},
-        {"english": "Every day is a fresh start.", "gujarati": "\u0aa6\u0ab0\u0ac7\u0a95 \u0aa6\u0abf\u0ab5\u0ab8 \u0a8f\u0a95 \u0aa8\u0ab5\u0ac0 \u0ab6\u0ab0\u0ac2\u0a86\u0aa4 \u0a9b\u0ac7.", "transliteration": "Darek divas ek navi sharuat chhe."},
-        {"english": "Believe in yourself always.", "gujarati": "\u0ab9\u0a82\u0aae\u0ac7\u0ab6\u0abe \u0aa4\u0aae\u0abe\u0ab0\u0ac0 \u0a9c\u0abe\u0aa4 \u0aaa\u0ab0 \u0ab5\u0abf\u0ab6\u0acd\u0ab5\u0abe\u0ab8 \u0ab0\u0abe\u0a96\u0acb.", "transliteration": "Hamesha tamari jaat par vishwas rakho."},
-        {"english": "Small steps lead to big changes.", "gujarati": "\u0aa8\u0abe\u0aa8\u0abe \u0aaa\u0a97\u0ab2\u0abe\u0a82 \u0aae\u0acb\u0a9f\u0abe \u0aab\u0ac7\u0ab0\u0aab\u0abe\u0ab0\u0acb \u0aa4\u0ab0\u0aab \u0aa6\u0acb\u0ab0\u0ac0 \u0a9c\u0abe\u0aaf \u0a9b\u0ac7.", "transliteration": "Nana pagla mota ferfaro taraf dori jay chhe."},
-        {"english": "You are stronger than you think.", "gujarati": "\u0aa4\u0aae\u0ac7 \u0ab5\u0abf\u0a9a\u0abe\u0ab0\u0acb \u0a9b\u0acb \u0aa4\u0ac7\u0aa8\u0abe \u0a95\u0ab0\u0aa4\u0abe\u0a82 \u0ab5\u0aa7\u0ac1 \u0aae\u0a9c\u0aac\u0ac2\u0aa4 \u0a9b\u0acb.", "transliteration": "Tame vicharo chho tena karta vadhu majboot chho."},
-        {"english": "Happiness is a choice, choose it.", "gujarati": "\u0ab8\u0ac1\u0a96 \u0a8f\u0a95 \u0aaa\u0ab8\u0a82\u0aa6\u0a97\u0ac0 \u0a9b\u0ac7, \u0aa4\u0ac7\u0aa8\u0ac7 \u0aaa\u0ab8\u0a82\u0aa6 \u0a95\u0ab0\u0acb.", "transliteration": "Sukh ek pasandgi chhe, tene pasand karo."},
-        {"english": "What time is it please.", "gujarati": "\u0a95\u0ac3\u0aaa\u0abe \u0a95\u0ab0\u0ac0\u0aa8\u0ac7 \u0ab8\u0aae\u0aaf \u0ab6\u0ac1\u0a82 \u0aa5\u0aaf\u0acb \u0a9b\u0ac7.", "transliteration": "Krupa karine samay shu thayo chhe."},
-        {"english": "Where is the train station.", "gujarati": "\u0ab0\u0ac7\u0ab2\u0acd\u0ab5\u0ac7 \u0ab8\u0acd\u0a9f\u0ac7\u0ab6\u0aa8 \u0a95\u0acd\u0aaf\u0abe\u0a82 \u0a9b\u0ac7.", "transliteration": "Railway station kya chhe."},
-        {"english": "How much does this cost.", "gujarati": "\u0a86\u0aa8\u0ac0 \u0a95\u0abf\u0a82\u0aae\u0aa4 \u0a95\u0ac7\u0a9f\u0ab2\u0ac0 \u0a9b\u0ac7.", "transliteration": "Aani kimmat ketli chhe."},
-        {"english": "Can you help me please.", "gujarati": "\u0ab6\u0ac1\u0a82 \u0aa4\u0aae\u0ac7 \u0a95\u0ac3\u0aaa\u0abe \u0a95\u0ab0\u0ac0\u0aa8\u0ac7 \u0aae\u0aa8\u0ac7 \u0aae\u0aa6\u0aa6 \u0a95\u0ab0\u0ac0 \u0ab6\u0a95\u0acb \u0a9b\u0acb.", "transliteration": "Shu tame krupa karine mane madad kari shako chho."},
-        {"english": "I would like a coffee please.", "gujarati": "\u0aae\u0aa8\u0ac7 \u0a95\u0ac3\u0aaa\u0abe \u0a95\u0ab0\u0ac0\u0aa8\u0ac7 \u0a8f\u0a95 \u0a95\u0acb\u0aab\u0ac0 \u0a9c\u0acb\u0a88\u0a8f \u0a9b\u0ac7.", "transliteration": "Mane krupa karine ek coffee joie chhe."},
-        {"english": "The food is delicious today.", "gujarati": "\u0a86\u0a9c\u0ac7 \u0a96\u0acb\u0ab0\u0abe\u0a95 \u0ab8\u0acd\u0ab5\u0abe\u0aa6\u0abf\u0ab7\u0acd\u0a9f \u0a9b\u0ac7.", "transliteration": "Aaje khorak swadisht chhe."},
-        {"english": "Have a wonderful weekend.", "gujarati": "\u0aa4\u0aae\u0abe\u0ab0\u0acb \u0ab8\u0aaa\u0acd\u0aa4\u0abe\u0ab9\u0abe\u0a82\u0aa4 \u0ab6\u0ac1\u0aad \u0ab0\u0ab9\u0ac7.", "transliteration": "Tamaro saptahant shubh rahe."},
-        {"english": "Take care of yourself.", "gujarati": "\u0aa4\u0aae\u0abe\u0ab0\u0ac0 \u0ab8\u0a82\u0aad\u0abe\u0ab3 \u0ab0\u0abe\u0a96\u0acb.", "transliteration": "Tamari sambhal rakho."},
-        {"english": "See you tomorrow my friend.", "gujarati": "\u0a86\u0ab5\u0aa4\u0ac0\u0a95\u0abe\u0ab2\u0ac7 \u0aae\u0ab3\u0ac0\u0ab6\u0ac1\u0a82 \u0aae\u0abe\u0ab0\u0abe \u0aae\u0abf\u0aa4\u0acd\u0ab0.", "transliteration": "Aavtikale malishu mara mitra."},
-        {"english": "The weather is beautiful outside.", "gujarati": "\u0aac\u0ab9\u0abe\u0ab0 \u0ab9\u0ab5\u0abe\u0aae\u0abe\u0aa8 \u0ab8\u0ac1\u0a82\u0aa6\u0ab0 \u0a9b\u0ac7.", "transliteration": "Bahar havaman sundar chhe."},
-        {"english": "I am very happy today.", "gujarati": "\u0ab9\u0ac1\u0a82 \u0a86\u0a9c\u0ac7 \u0a96\u0ac2\u0aac \u0a96\u0ac1\u0ab6 \u0a9b\u0ac1\u0a82.", "transliteration": "Hu aaje khoob khush chhu."},
-        {"english": "Learning a language opens new doors.", "gujarati": "\u0aad\u0abe\u0ab7\u0abe \u0ab6\u0ac0\u0a96\u0ab5\u0abe\u0aa5\u0ac0 \u0aa8\u0ab5\u0abe \u0aa6\u0ab0\u0ab5\u0abe\u0a9c\u0abe \u0a96\u0ac1\u0ab2\u0ac7 \u0a9b\u0ac7.", "transliteration": "Bhasha shikhvathi nava darvaja khule chhe."},
-        {"english": "Keep practicing every single day.", "gujarati": "\u0aa6\u0ab0\u0ab0\u0acb\u0a9c \u0aaa\u0acd\u0ab0\u0ac7\u0a95\u0acd\u0a9f\u0abf\u0ab8 \u0a95\u0ab0\u0aa4\u0abe \u0ab0\u0ab9\u0acb.", "transliteration": "Darroj practice karta raho."},
-        {"english": "You can achieve anything you want.", "gujarati": "\u0aa4\u0aae\u0ac7 \u0a9c\u0ac7 \u0a87\u0a9a\u0acd\u0a9b\u0acb \u0aa4\u0ac7 \u0aaa\u0acd\u0ab0\u0abe\u0aaa\u0acd\u0aa4 \u0a95\u0ab0\u0ac0 \u0ab6\u0a95\u0acb \u0a9b\u0acb.", "transliteration": "Tame je ichchho te prapt kari shako chho."},
-        {"english": "Rest when you are tired.", "gujarati": "\u0a9c\u0acd\u0aaf\u0abe\u0ab0\u0ac7 \u0aa4\u0aae\u0ac7 \u0aa5\u0abe\u0a95\u0ac0 \u0a9c\u0abe\u0a93 \u0aa4\u0acd\u0aaf\u0abe\u0ab0\u0ac7 \u0a86\u0ab0\u0abe\u0aae \u0a95\u0ab0\u0acb.", "transliteration": "Jyare tame thaki jao tyare aaram karo."},
-        {"english": "Focus on the positive things.", "gujarati": "\u0ab8\u0a95\u0abe\u0ab0\u0abe\u0aa4\u0acd\u0aae\u0a95 \u0aac\u0abe\u0aac\u0aa4\u0acb \u0aaa\u0ab0 \u0aa7\u0acd\u0aaf\u0abe\u0aa8 \u0a95\u0ac7\u0aa8\u0acd\u0aa6\u0acd\u0ab0\u0abf\u0aa4 \u0a95\u0ab0\u0acb.", "transliteration": "Sakaratmak babato par dhyan kendrit karo."},
-        {"english": "Learn from your mistakes.", "gujarati": "\u0aa4\u0aae\u0abe\u0ab0\u0ac0 \u0aad\u0ac2\u0ab2\u0acb\u0aae\u0abe\u0a82\u0aa5\u0ac0 \u0ab6\u0ac0\u0a96\u0acb.", "transliteration": "Tamari bhulomathi shikho."},
-        {"english": "Trust the process completely.", "gujarati": "\u0aaa\u0acd\u0ab0\u0a95\u0acd\u0ab0\u0abf\u0aaf\u0abe \u0aaa\u0ab0 \u0ab8\u0a82\u0aaa\u0ac2\u0ab0\u0acd\u0aa3 \u0ab5\u0abf\u0ab6\u0acd\u0ab5\u0abe\u0ab8 \u0ab0\u0abe\u0a96\u0acb.", "transliteration": "Prakriya par sampurna vishwas rakho."},
-        {"english": "Breathe deeply and stay calm.", "gujarati": "\u0a8a\u0a82\u0aa1\u0acb \u0ab6\u0acd\u0ab5\u0abe\u0ab8 \u0ab2\u0acb \u0a85\u0aa8\u0ac7 \u0ab6\u0abe\u0a82\u0aa4 \u0ab0\u0ab9\u0acb.", "transliteration": "Undho shwas lo ane shant raho."},
-        {"english": "Enjoy the little moments in life.", "gujarati": "\u0a9c\u0ac0\u0ab5\u0aa8\u0aa8\u0ac0 \u0aa8\u0abe\u0aa8\u0ac0 \u0a95\u0acd\u0ab7\u0aa3\u0acb\u0aa8\u0acb \u0a86\u0aa8\u0a82\u0aa6 \u0aae\u0abe\u0aa3\u0acb.", "transliteration": "Jivanni nani kshano no aanand mano."},
-        {"english": "Smile more, worry less.", "gujarati": "\u0ab5\u0aa7\u0ac1 \u0ab8\u0acd\u0aae\u0abf\u0aa4 \u0a95\u0ab0\u0acb, \u0a93\u0a9b\u0ac0 \u0a9a\u0abf\u0a82\u0aa4\u0abe \u0a95\u0ab0\u0acb.", "transliteration": "Vadhu smit karo, ochhi chinta karo."},
-        {"english": "Be kind to everyone you meet.", "gujarati": "\u0aa4\u0aae\u0ac7 \u0aae\u0ab3\u0acb \u0aa4\u0ac7 \u0aa6\u0ab0\u0ac7\u0a95 \u0ab8\u0abe\u0aa5\u0ac7 \u0aa6\u0aaf\u0abe\u0ab3\u0ac1 \u0aac\u0aa8\u0acb.", "transliteration": "Tame malo te darek sathe dayalu bano."},
-        {"english": "Help others without expecting anything back.", "gujarati": "\u0aac\u0aa6\u0ab2\u0abe\u0aae\u0abe\u0a82 \u0a95\u0a82\u0a88\u0aaa\u0aa3 \u0a85\u0aaa\u0ac7\u0a95\u0acd\u0ab7\u0abe \u0ab0\u0abe\u0a96\u0acd\u0aaf\u0abe \u0ab5\u0abf\u0aa8\u0abe \u0a85\u0aa8\u0acd\u0aaf\u0aa8\u0ac7 \u0aae\u0aa6\u0aa6 \u0a95\u0ab0\u0acb.", "transliteration": "Badlama kyapan apeksha rakhya vina anyane madad karo."},
-        {"english": "Forgive yourself and move forward.", "gujarati": "\u0aa4\u0aae\u0abe\u0ab0\u0ac0 \u0a9c\u0abe\u0aa4\u0aa8\u0ac7 \u0aae\u0abe\u0aab \u0a95\u0ab0\u0acb \u0a85\u0aa8\u0ac7 \u0a86\u0a97\u0ab3 \u0ab5\u0aa7\u0acb.", "transliteration": "Tamari jaatne maaf karo ane aagad vadho."},
-        {"english": "Stay strong in difficult times.", "gujarati": "\u0aae\u0ac1\u0ab6\u0acd\u0a95\u0ac7\u0ab2 \u0ab8\u0aae\u0aaf\u0aae\u0abe\u0a82 \u0aae\u0a9c\u0aac\u0ac2\u0aa4 \u0ab0\u0ab9\u0acb.", "transliteration": "Mushkel samayma majboot raho."},
-        {"english": "Every moment is a new beginning.", "gujarati": "\u0aa6\u0ab0\u0ac7\u0a95 \u0a95\u0acd\u0ab7\u0aa3 \u0a8f\u0a95 \u0aa8\u0ab5\u0ac0 \u0ab6\u0ab0\u0ac2\u0a86\u0aa4 \u0a9b\u0ac7.", "transliteration": "Darek kshan ek navi sharuat chhe."},
-        {"english": "Listen to your heart always.", "gujarati": "\u0ab9\u0a82\u0aae\u0ac7\u0ab6\u0abe \u0aa4\u0aae\u0abe\u0ab0\u0abe \u0ab9\u0ac3\u0aa6\u0aaf\u0aa8\u0ac1\u0a82 \u0ab8\u0abe\u0a82\u0aad\u0ab3\u0acb.", "transliteration": "Hamesha tamara hrudaynu sambhalo."},
-        {"english": "Do what makes you happy.", "gujarati": "\u0a9c\u0ac7 \u0aa4\u0aae\u0aa8\u0ac7 \u0a96\u0ac1\u0ab6 \u0a95\u0ab0\u0ac7 \u0aa4\u0ac7 \u0a95\u0ab0\u0acb.", "transliteration": "Je tamne khush kare te karo."},
-        {"english": "Your potential is unlimited.", "gujarati": "\u0aa4\u0aae\u0abe\u0ab0\u0ac0 \u0a95\u0acd\u0ab7\u0aae\u0aa4\u0abe \u0a85\u0aae\u0ab0\u0acd\u0aaf\u0abe\u0aa6\u0abf\u0aa4 \u0a9b\u0ac7.", "transliteration": "Tamari kshamata amaryadit chhe."},
-        {"english": "Be brave and take risks.", "gujarati": "\u0aac\u0ab9\u0abe\u0aa6\u0ac1\u0ab0 \u0aac\u0aa8\u0acb \u0a85\u0aa8\u0ac7 \u0a9c\u0acb\u0a96\u0aae \u0ab2\u0acb.", "transliteration": "Bahadur bano ane jokham lo."},
-        {"english": "Celebrate your progress every day.", "gujarati": "\u0aa4\u0aae\u0abe\u0ab0\u0ac0 \u0aaa\u0acd\u0ab0\u0a97\u0aa4\u0abf \u0aa6\u0ab0\u0ab0\u0acb\u0a9c \u0a89\u0a9c\u0ab5\u0acb.", "transliteration": "Tamari pragati darroj ujvo."},
-        {"english": "Surround yourself with good people.", "gujarati": "\u0aa4\u0aae\u0abe\u0ab0\u0ac0 \u0a9c\u0abe\u0aa4\u0aa8\u0ac7 \u0ab8\u0abe\u0ab0\u0abe \u0ab2\u0acb\u0a95\u0acb\u0aa5\u0ac0 \u0a98\u0ac7\u0ab0\u0ac0 \u0ab2\u0acb.", "transliteration": "Tamari jaatne sara lokothi gheri lo."},
-        {"english": "Read books and grow your mind.", "gujarati": "\u0aaa\u0ac1\u0ab8\u0acd\u0aa4\u0a95\u0acb \u0ab5\u0abe\u0a82\u0a9a\u0acb \u0a85\u0aa8\u0ac7 \u0aa4\u0aae\u0abe\u0ab0\u0abe \u0aae\u0aa8\u0aa8\u0ac7 \u0ab5\u0abf\u0a95\u0ab8\u0abe\u0ab5\u0acb.", "transliteration": "Pustako vancho ane tamara mann ne vikasavo."},
-        {"english": "Travel and discover new places.", "gujarati": "\u0aaa\u0acd\u0ab0\u0ab5\u0abe\u0ab8 \u0a95\u0ab0\u0acb \u0a85\u0aa8\u0ac7 \u0aa8\u0ab5\u0ac0 \u0a9c\u0a97\u0acd\u0aaf\u0abe\u0a93 \u0ab6\u0acb\u0aa7\u0acb.", "transliteration": "Pravas karo ane navi jagyao shodho."},
-        {"english": "Appreciate what you already have.", "gujarati": "\u0aa4\u0aae\u0abe\u0ab0\u0ac0 \u0aaa\u0abe\u0ab8\u0ac7 \u0a9c\u0ac7 \u0aaa\u0ab9\u0ac7\u0ab2\u0ac7\u0aa5\u0ac0 \u0a9b\u0ac7 \u0aa4\u0ac7\u0aa8\u0ac0 \u0a95\u0aa6\u0ab0 \u0a95\u0ab0\u0acb.", "transliteration": "Tamari pase je pahelethi chhe teni kadar karo."},
-        {"english": "Dance like nobody is watching.", "gujarati": "\u0a8f\u0ab5\u0ac0 \u0ab0\u0ac0\u0aa4\u0ac7 \u0aa8\u0abe\u0a9a\u0acb \u0a9c\u0abe\u0aa3\u0ac7 \u0a95\u0acb\u0a88 \u0a9c\u0acb\u0a88 \u0ab0\u0ab9\u0acd\u0aaf\u0ac1\u0a82 \u0aa8\u0aa5\u0ac0.", "transliteration": "Evi rite nacho jaane koi joi rahyu nathi."},
-        {"english": "Sing from your heart out loud.", "gujarati": "\u0aa4\u0aae\u0abe\u0ab0\u0abe \u0ab9\u0ac3\u0aa6\u0aaf\u0aae\u0abe\u0a82\u0aa5\u0ac0 \u0aae\u0acb\u0a9f\u0ac7\u0aa5\u0ac0 \u0a97\u0abe\u0a93.", "transliteration": "Tamara hrudaymathi mote thi gao."},
-        {"english": "Plant seeds of kindness everywhere.", "gujarati": "\u0aa6\u0ab0\u0ac7\u0a95 \u0a9c\u0a97\u0acd\u0aaf\u0abe\u0a8f \u0aa6\u0aaf\u0abe\u0aa8\u0abe \u0aac\u0ac0\u0a9c \u0ab5\u0abe\u0ab5\u0acb.", "transliteration": "Darek jagyae daya na beej vavo."},
-        {"english": "Let go of what you cannot control.", "gujarati": "\u0a9c\u0ac7\u0aa8\u0ac7 \u0aa4\u0aae\u0ac7 \u0aa8\u0abf\u0aaf\u0a82\u0aa4\u0acd\u0ab0\u0abf\u0aa4 \u0a95\u0ab0\u0ac0 \u0ab6\u0a95\u0aa4\u0abe \u0aa8\u0aa5\u0ac0 \u0aa4\u0ac7\u0aa8\u0ac7 \u0a9c\u0ab5\u0abe \u0aa6\u0acb.", "transliteration": "Jene tame niyantrit kari shakta nathi tene java do."},
-        {"english": "Be present in the here and now.", "gujarati": "\u0a85\u0ab9\u0ac0\u0a82 \u0a85\u0aa8\u0ac7 \u0a85\u0aa4\u0acd\u0aaf\u0abe\u0ab0\u0ac7 \u0ab9\u0abe\u0a9c\u0ab0 \u0ab0\u0ab9\u0acb.", "transliteration": "Ahi ane atyare hajar raho."}
-    ]
-    fresh = [p for p in generic_fallbacks if not is_phrase_used(p["english"])]
-    return fresh[:num_phrases]
+    final_phrases = collected[:num_phrases]
+    add_phrases_to_history(final_phrases, category_english)
+    return final_phrases
 async def generate_single_audio(text: str, voice: str, output_path: str):
     try:
         import edge_tts
