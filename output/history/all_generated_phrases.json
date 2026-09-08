@@ -9729,7 +9729,42 @@
       "transliteration": "Saral sadhanothi, aanand shodho.",
       "category": "Creativity",
       "generated_at": "2026-09-08T16:29:39.847776"
+    },
+    {
+      "english": "Follow the winding path, ahead.",
+      "gujarati": "વાંકાચૂકા રસ્તાને અનુસરો, આગળ.",
+      "transliteration": "Vankachuka rastane anusaro, aagal.",
+      "category": "Directions",
+      "generated_at": "2026-09-08T17:44:25.064232"
+    },
+    {
+      "english": "Turn left at the ancient tree.",
+      "gujarati": "જૂના વૃક્ષ પાસે ડાબે વળો.",
+      "transliteration": "Juna vruksha pase daabe valo.",
+      "category": "Directions",
+      "generated_at": "2026-09-08T17:44:25.064248"
+    },
+    {
+      "english": "Head towards the setting sun.",
+      "gujarati": "આથમતા સૂર્ય તરફ જાઓ.",
+      "transliteration": "Aathamta surya taraf jaao.",
+      "category": "Directions",
+      "generated_at": "2026-09-08T17:44:25.064253"
+    },
+    {
+      "english": "Navigate by the stars, tonight.",
+      "gujarati": "આજે રાત્રે તારાઓ દ્વારા માર્ગદર્શન મેળવો.",
+      "transliteration": "Aaje ratre tarao dwara margdarshan melvo.",
+      "category": "Directions",
+      "generated_at": "2026-09-08T17:44:25.064256"
+    },
+    {
+      "english": "Find your way, with purpose.",
+      "gujarati": "હેતુપૂર્વક તમારો માર્ગ શોધો.",
+      "transliteration": "Hetupurvak tamaro marg shodho.",
+      "category": "Directions",
+      "generated_at": "2026-09-08T17:44:25.064260"
     }
   ],
-  "last_updated": "2026-09-08T16:29:39.847778"
+  "last_updated": "2026-09-08T17:44:25.064261"
 }
