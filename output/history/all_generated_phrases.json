@@ -9904,7 +9904,42 @@
       "transliteration": "Taja pudina na paan, thandak ni anubhuti.",
       "category": "Food",
       "generated_at": "2026-09-09T16:26:46.357793"
+    },
+    {
+      "english": "My eyes, see new wonders.",
+      "gujarati": "મારી આંખો, નવા અજાયબીઓ જુએ છે.",
+      "transliteration": "Mari aankho, nava ajayabio jue chhe.",
+      "category": "Body Parts",
+      "generated_at": "2026-09-09T19:39:26.171252"
+    },
+    {
+      "english": "His ears, hear distant songs.",
+      "gujarati": "તેના કાન, દૂરના ગીતો સાંભળે છે.",
+      "transliteration": "Tena kaan, durna geeto sambhale chhe.",
+      "category": "Body Parts",
+      "generated_at": "2026-09-09T19:39:26.171264"
+    },
+    {
+      "english": "Her nose, smells the rain.",
+      "gujarati": "તેનું નાક, વરસાદની ગંધ લે છે.",
+      "transliteration": "Tenu naak, varsadni gandh le chhe.",
+      "category": "Body Parts",
+      "generated_at": "2026-09-09T19:39:26.171267"
+    },
+    {
+      "english": "My mouth, speaks kind words.",
+      "gujarati": "મારું મોં, દયાળુ શબ્દો બોલે છે.",
+      "transliteration": "Maru mo, dayalu shabdo bole chhe.",
+      "category": "Body Parts",
+      "generated_at": "2026-09-09T19:39:26.171269"
+    },
+    {
+      "english": "His neck, holds his head.",
+      "gujarati": "તેની ગરદન, તેનું માથું ધરાવે છે.",
+      "transliteration": "Teni gardan, tenu mathu dharave chhe.",
+      "category": "Body Parts",
+      "generated_at": "2026-09-09T19:39:26.171271"
     }
   ],
-  "last_updated": "2026-09-09T16:26:46.357795"
+  "last_updated": "2026-09-09T19:39:26.171273"
 }
