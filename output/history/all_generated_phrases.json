@@ -10254,7 +10254,42 @@
       "transliteration": "Aa to khubaj saral chhe.",
       "category": "Common Expressions",
       "generated_at": "2026-09-11T17:29:39.504921"
+    },
+    {
+      "english": "Help me, fast!",
+      "gujarati": "મદદ કરો, જલદી!",
+      "transliteration": "Madad karo, jaldi!",
+      "category": "Emergency",
+      "generated_at": "2026-09-11T19:30:28.218739"
+    },
+    {
+      "english": "Danger nearby, move!",
+      "gujarati": "ખતરો નજીક, ખસો!",
+      "transliteration": "Khatro najik, khaso!",
+      "category": "Emergency",
+      "generated_at": "2026-09-11T19:30:28.218753"
+    },
+    {
+      "english": "Call for help, now!",
+      "gujarati": "મદદ માટે બોલાવો, અત્યારે!",
+      "transliteration": "Madad mate bolavo, atyare!",
+      "category": "Emergency",
+      "generated_at": "2026-09-11T19:30:28.218758"
+    },
+    {
+      "english": "I need assistance, urgently.",
+      "gujarati": "મને તાત્કાલિક સહાય જોઈએ.",
+      "transliteration": "Mane tatkalik sahay joie.",
+      "category": "Emergency",
+      "generated_at": "2026-09-11T19:30:28.218761"
+    },
+    {
+      "english": "Something is wrong, seriously.",
+      "gujarati": "કંઈક ગંભીર રીતે ખોટું છે.",
+      "transliteration": "Kaink gambhir rite khotu chhe.",
+      "category": "Emergency",
+      "generated_at": "2026-09-11T19:30:28.218765"
     }
   ],
-  "last_updated": "2026-09-11T17:29:39.504923"
+  "last_updated": "2026-09-11T19:30:28.218766"
 }
