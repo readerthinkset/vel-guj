@@ -10359,7 +10359,42 @@
       "transliteration": "Darek shwas, anandmay bhet.",
       "category": "Joy",
       "generated_at": "2026-09-12T01:59:21.333850"
+    },
+    {
+      "english": "What's the price, please?",
+      "gujarati": "ભાવ શું છે, કૃપા કરીને?",
+      "transliteration": "Bhav shu chhe, krupa karine?",
+      "category": "Shopping",
+      "generated_at": "2026-09-12T15:25:44.731380"
+    },
+    {
+      "english": "Where are the textiles?",
+      "gujarati": "કાપડ ક્યાં છે?",
+      "transliteration": "Kapad kyan chhe?",
+      "category": "Shopping",
+      "generated_at": "2026-09-12T15:25:44.731392"
+    },
+    {
+      "english": "This color, suits me well.",
+      "gujarati": "આ રંગ, મને સારો લાગે છે.",
+      "transliteration": "Aa rang, mane saro lage chhe.",
+      "category": "Shopping",
+      "generated_at": "2026-09-12T15:25:44.731396"
+    },
+    {
+      "english": "Do you have, a smaller size?",
+      "gujarati": "શું તમારી પાસે, નાનું માપ છે?",
+      "transliteration": "Shu tamari pase, nanu map chhe?",
+      "category": "Shopping",
+      "generated_at": "2026-09-12T15:25:44.731400"
+    },
+    {
+      "english": "This is, exactly what I wanted.",
+      "gujarati": "આ, બરાબર તે જ છે જે મને જોઈતું હતું.",
+      "transliteration": "Aa, barabar te j chhe je mane joitu hatu.",
+      "category": "Shopping",
+      "generated_at": "2026-09-12T15:25:44.731403"
     }
   ],
-  "last_updated": "2026-09-12T01:59:21.333852"
+  "last_updated": "2026-09-12T15:25:44.731405"
 }
