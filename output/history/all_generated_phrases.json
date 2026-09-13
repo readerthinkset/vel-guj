@@ -10604,7 +10604,42 @@
       "transliteration": "Bhetni aap-le, prem vahenchayo.",
       "category": "Holidays",
       "generated_at": "2026-09-13T17:13:59.220738"
+    },
+    {
+      "english": "Hello, friend, what's new?",
+      "gujarati": "નમસ્કાર મિત્ર, શું નવું?",
+      "transliteration": "Namaskar mitra, shu navu?",
+      "category": "Greetings",
+      "generated_at": "2026-09-13T19:15:26.671212"
+    },
+    {
+      "english": "Greetings, hope you're well.",
+      "gujarati": "શુભેચ્છાઓ, તમે મજામાં હશો.",
+      "transliteration": "Shubhechchhao, tame majama hasho.",
+      "category": "Greetings",
+      "generated_at": "2026-09-13T19:15:26.671224"
+    },
+    {
+      "english": "A cheerful hello, to you.",
+      "gujarati": "તમને, એક ખુશનુમા નમસ્કાર.",
+      "transliteration": "Tamne, ek khushnuma namaskar.",
+      "category": "Greetings",
+      "generated_at": "2026-09-13T19:15:26.671227"
+    },
+    {
+      "english": "Good day, enjoy your time.",
+      "gujarati": "સુપ્રભાત, તમારા સમયનો આનંદ લો.",
+      "transliteration": "Suprabhat, tamara samayno aanand lo.",
+      "category": "Greetings",
+      "generated_at": "2026-09-13T19:15:26.671230"
+    },
+    {
+      "english": "Welcome, come on in.",
+      "gujarati": "સ્વાગત છે, અંદર આવો.",
+      "transliteration": "Swagat chhe, andar aavo.",
+      "category": "Greetings",
+      "generated_at": "2026-09-13T19:15:26.671232"
     }
   ],
-  "last_updated": "2026-09-13T17:13:59.220740"
+  "last_updated": "2026-09-13T19:15:26.671234"
 }
