@@ -10709,7 +10709,42 @@
       "transliteration": "Ā paramparāgat jūta, dekhāvane pūrṇa kare chhe.",
       "category": "Clothes",
       "generated_at": "2026-09-14T02:10:25.575028"
+    },
+    {
+      "english": "The aroma, is truly inviting.",
+      "gujarati": "સુગંધ, ખરેખર આકર્ષક છે.",
+      "transliteration": "Sugandh, kharekher akarshak chhe.",
+      "category": "Restaurant",
+      "generated_at": "2026-09-14T18:01:26.031831"
+    },
+    {
+      "english": "This dish, is a must-try.",
+      "gujarati": "આ વાનગી, જરૂર અજમાવવી જોઈએ.",
+      "transliteration": "Aa vangi, jarur ajmavvi joiye.",
+      "category": "Restaurant",
+      "generated_at": "2026-09-14T18:01:26.031843"
+    },
+    {
+      "english": "More water, please.",
+      "gujarati": "વધુ પાણી, કૃપા કરીને.",
+      "transliteration": "Vadhu pani, krupa karine.",
+      "category": "Restaurant",
+      "generated_at": "2026-09-14T18:01:26.031847"
+    },
+    {
+      "english": "Everything, tasted delicious.",
+      "gujarati": "બધું, ખૂબ જ સ્વાદિષ્ટ લાગ્યું.",
+      "transliteration": "Badhu, khubaj svadisht lagyu.",
+      "category": "Restaurant",
+      "generated_at": "2026-09-14T18:01:26.031850"
+    },
+    {
+      "english": "Can we sit, over there?",
+      "gujarati": "શું આપણે, ત્યાં બેસી શકીએ?",
+      "transliteration": "Shu aapne, tya besi shakiye?",
+      "category": "Restaurant",
+      "generated_at": "2026-09-14T18:01:26.031854"
     }
   ],
-  "last_updated": "2026-09-14T02:10:25.575030"
+  "last_updated": "2026-09-14T18:01:26.031857"
 }
