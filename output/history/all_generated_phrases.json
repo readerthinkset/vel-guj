@@ -10744,7 +10744,42 @@
       "transliteration": "Shu aapne, tya besi shakiye?",
       "category": "Restaurant",
       "generated_at": "2026-09-14T18:01:26.031854"
+    },
+    {
+      "english": "Go past the vibrant market.",
+      "gujarati": "જીવંત બજાર પાસેથી પસાર થાઓ.",
+      "transliteration": "Jivant bajar pasethi pasar thao.",
+      "category": "Directions",
+      "generated_at": "2026-09-14T19:00:52.500350"
+    },
+    {
+      "english": "Follow the river, upstream.",
+      "gujarati": "નદીની સાથે, ઉપર તરફ જાઓ.",
+      "transliteration": "Nadīni sathe, upar taraf jao.",
+      "category": "Directions",
+      "generated_at": "2026-09-14T19:00:52.500371"
+    },
+    {
+      "english": "Keep walking, towards the hills.",
+      "gujarati": "પર્વતો તરફ, ચાલતા રહો.",
+      "transliteration": "Parvato taraf, chalta raho.",
+      "category": "Directions",
+      "generated_at": "2026-09-14T19:00:52.500375"
+    },
+    {
+      "english": "Bear right, at the crossroads.",
+      "gujarati": "ચોકડી પર, જમણી બાજુ વળો.",
+      "transliteration": "Chokadi par, jamani baju valo.",
+      "category": "Directions",
+      "generated_at": "2026-09-14T19:00:52.500378"
+    },
+    {
+      "english": "The temple is, just around the corner.",
+      "gujarati": "મંદિર, ખૂણાની આસપાસ જ છે.",
+      "transliteration": "Mandir, khunani aspas j chhe.",
+      "category": "Directions",
+      "generated_at": "2026-09-14T19:00:52.500380"
     }
   ],
-  "last_updated": "2026-09-14T18:01:26.031857"
+  "last_updated": "2026-09-14T19:00:52.500382"
 }
