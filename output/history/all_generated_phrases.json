@@ -10919,7 +10919,42 @@
       "transliteration": "Sharir aaram kare, man mukt chhe.",
       "category": "Mindfulness",
       "generated_at": "2026-09-15T16:47:26.447544"
+    },
+    {
+      "english": "Yes, I understand.",
+      "gujarati": "હા, હું સમજ્યો/સમજી.",
+      "transliteration": "Ha, hu samjyo/samji.",
+      "category": "Basic Phrases",
+      "generated_at": "2026-09-15T17:56:02.124378"
+    },
+    {
+      "english": "No, I don't know.",
+      "gujarati": "ના, મને ખબર નથી.",
+      "transliteration": "Na, mane khabar nathi.",
+      "category": "Basic Phrases",
+      "generated_at": "2026-09-15T17:56:02.124393"
+    },
+    {
+      "english": "How much is this?",
+      "gujarati": "આ કેટલાનું છે?",
+      "transliteration": "Aa ketlanu chhe?",
+      "category": "Basic Phrases",
+      "generated_at": "2026-09-15T17:56:02.124396"
+    },
+    {
+      "english": "Please, help me.",
+      "gujarati": "કૃપા કરીને, મને મદદ કરો.",
+      "transliteration": "Krupa karine, mane madad karo.",
+      "category": "Basic Phrases",
+      "generated_at": "2026-09-15T17:56:02.124399"
+    },
+    {
+      "english": "I need water.",
+      "gujarati": "મને પાણી જોઈએ છે.",
+      "transliteration": "Mane pani joie chhe.",
+      "category": "Basic Phrases",
+      "generated_at": "2026-09-15T17:56:02.124401"
     }
   ],
-  "last_updated": "2026-09-15T16:47:26.447545"
+  "last_updated": "2026-09-15T17:56:02.124402"
 }
