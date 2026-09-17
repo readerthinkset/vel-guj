@@ -11234,7 +11234,42 @@
       "transliteration": "Dolphin mojano vacche, kudka mare chhe.",
       "category": "Animals",
       "generated_at": "2026-09-17T02:14:52.884343"
+    },
+    {
+      "english": "Fire, very hot!",
+      "gujarati": "આગ, ખૂબ ગરમ!",
+      "transliteration": "Aag, khoob garam!",
+      "category": "Emergency",
+      "generated_at": "2026-09-17T16:47:36.795668"
+    },
+    {
+      "english": "Water rising, quick!",
+      "gujarati": "પાણી વધી રહ્યું છે, જલદી!",
+      "transliteration": "Pani vadhi rahyu chhe, jaldi!",
+      "category": "Emergency",
+      "generated_at": "2026-09-17T16:47:36.795685"
+    },
+    {
+      "english": "Medical emergency, now!",
+      "gujarati": "તબીબી કટોકટી, અત્યારે!",
+      "transliteration": "Tabibi katokati, atyare!",
+      "category": "Emergency",
+      "generated_at": "2026-09-17T16:47:36.795689"
+    },
+    {
+      "english": "Lost, need direction.",
+      "gujarati": "ખોવાઈ ગયો છું, દિશા જોઈએ.",
+      "transliteration": "Khovai gayo chhu, disha joie.",
+      "category": "Emergency",
+      "generated_at": "2026-09-17T16:47:36.795693"
+    },
+    {
+      "english": "Power failure, dark!",
+      "gujarati": "વીજળી બંધ, અંધારું!",
+      "transliteration": "Vijli bandh, andharu!",
+      "category": "Emergency",
+      "generated_at": "2026-09-17T16:47:36.795695"
     }
   ],
-  "last_updated": "2026-09-17T02:14:52.884344"
+  "last_updated": "2026-09-17T16:47:36.795697"
 }
