@@ -12284,7 +12284,42 @@
       "transliteration": "Aavjo, phari malishu.",
       "category": "Basic Phrases",
       "generated_at": "2026-09-23T02:15:47.469746"
+    },
+    {
+      "english": "Is this locally made?",
+      "gujarati": "શું આ સ્થાનિક રીતે બનેલું છે?",
+      "transliteration": "Shu aa sthanik rite banelu chhe?",
+      "category": "Shopping",
+      "generated_at": "2026-09-23T16:42:01.961440"
+    },
+    {
+      "english": "What are the latest arrivals?",
+      "gujarati": "નવા શું આવ્યા છે?",
+      "transliteration": "Nava shu aavya chhe?",
+      "category": "Shopping",
+      "generated_at": "2026-09-23T16:42:01.961455"
+    },
+    {
+      "english": "I'm just looking around.",
+      "gujarati": "હું ફક્ત જોઈ રહ્યો/રહી છું.",
+      "transliteration": "Hu fakt joi rahyo/rahi chhu.",
+      "category": "Shopping",
+      "generated_at": "2026-09-23T16:42:01.961459"
+    },
+    {
+      "english": "Do you have any discounts?",
+      "gujarati": "શું કોઈ વળતર છે?",
+      "transliteration": "Shu koi valtar chhe?",
+      "category": "Shopping",
+      "generated_at": "2026-09-23T16:42:01.961462"
+    },
+    {
+      "english": "This is a good bargain.",
+      "gujarati": "આ સારી સોદાબાજી છે.",
+      "transliteration": "Aa sari sodabaji chhe.",
+      "category": "Shopping",
+      "generated_at": "2026-09-23T16:42:01.961465"
     }
   ],
-  "last_updated": "2026-09-23T02:15:47.469748"
+  "last_updated": "2026-09-23T16:42:01.961467"
 }
