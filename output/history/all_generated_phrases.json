@@ -12459,7 +12459,42 @@
       "transliteration": "Anand fati nikale chhe, mara andarthi.",
       "category": "Joy",
       "generated_at": "2026-09-24T02:02:26.641082"
+    },
+    {
+      "english": "Need help, urgent situation!",
+      "gujarati": "મદદ જોઈએ, તાત્કાલિક પરિસ્થિતિ!",
+      "transliteration": "Madad joie, tatkalik paristhiti!",
+      "category": "Emergency",
+      "generated_at": "2026-09-24T16:59:44.024822"
+    },
+    {
+      "english": "Danger nearby, be careful!",
+      "gujarati": "ખતરો નજીક, સાવચેત રહો!",
+      "transliteration": "Khatro najik, savchet raho!",
+      "category": "Emergency",
+      "generated_at": "2026-09-24T16:59:44.024836"
+    },
+    {
+      "english": "Someone is trapped, get help!",
+      "gujarati": "કોઈ ફસાયેલું છે, મદદ લાવો!",
+      "transliteration": "Koi fasayelu chhe, madad lavo!",
+      "category": "Emergency",
+      "generated_at": "2026-09-24T16:59:44.024840"
+    },
+    {
+      "english": "Explosion sound, evacuate!",
+      "gujarati": "વિસ્ફોટનો અવાજ, બહાર નીકળો!",
+      "transliteration": "Visphot no avaj, bahar nikalo!",
+      "category": "Emergency",
+      "generated_at": "2026-09-24T16:59:44.024843"
+    },
+    {
+      "english": "Gas leak suspected, stay away!",
+      "gujarati": "ગેસ લીક, દૂર રહો!",
+      "transliteration": "Gas leak, door raho!",
+      "category": "Emergency",
+      "generated_at": "2026-09-24T16:59:44.024846"
     }
   ],
-  "last_updated": "2026-09-24T02:02:26.641084"
+  "last_updated": "2026-09-24T16:59:44.024848"
 }
