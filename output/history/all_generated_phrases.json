@@ -12704,7 +12704,42 @@
       "transliteration": "Tamaru 'sha mate' shodho, Gujarati sathe.",
       "category": "Purpose",
       "generated_at": "2026-09-25T18:13:03.726721"
+    },
+    {
+      "english": "This table, is reserved.",
+      "gujarati": "આ ટેબલ, અનામત છે.",
+      "transliteration": "Aa table, amanat chhe.",
+      "category": "Restaurant",
+      "generated_at": "2026-09-25T20:20:59.540575"
+    },
+    {
+      "english": "What's today's, special?",
+      "gujarati": "આજનો, સ્પેશિયલ શું છે?",
+      "transliteration": "Aajno, special shu chhe?",
+      "category": "Restaurant",
+      "generated_at": "2026-09-25T20:20:59.540590"
+    },
+    {
+      "english": "Can we, order now?",
+      "gujarati": "શું આપણે, હવે ઓર્ડર કરી શકીએ?",
+      "transliteration": "Shu aapne, have order kari shakiye?",
+      "category": "Restaurant",
+      "generated_at": "2026-09-25T20:20:59.540594"
+    },
+    {
+      "english": "The soup, is very hot.",
+      "gujarati": "સૂપ, ખૂબ ગરમ છે.",
+      "transliteration": "Soup, khoob garam chhe.",
+      "category": "Restaurant",
+      "generated_at": "2026-09-25T20:20:59.540601"
+    },
+    {
+      "english": "A table, for two, please.",
+      "gujarati": "બે લોકો માટે, એક ટેબલ, કૃપા કરીને.",
+      "transliteration": "Be loko mate, ek table, krupa karine.",
+      "category": "Restaurant",
+      "generated_at": "2026-09-25T20:20:59.540604"
     }
   ],
-  "last_updated": "2026-09-25T18:13:03.726723"
+  "last_updated": "2026-09-25T20:20:59.540606"
 }
