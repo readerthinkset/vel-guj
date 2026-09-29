@@ -13369,7 +13369,42 @@
       "transliteration": "Gujarati ma nipun bano, shakyatao apnavo.",
       "category": "Success",
       "generated_at": "2026-09-29T18:01:04.773282"
+    },
+    {
+      "english": "Can I try this on, please?",
+      "gujarati": "શું હું આ પહેરી શકું છું, કૃપા કરીને?",
+      "transliteration": "Shu hu aa paheri shaku chhu, kripa karine?",
+      "category": "Shopping",
+      "generated_at": "2026-09-29T19:08:15.386923"
+    },
+    {
+      "english": "Where can I find handmade crafts?",
+      "gujarati": "મને હાથબનાવટની કલાકૃતિઓ ક્યાં મળશે?",
+      "transliteration": "Mane hathbanavatni kalakrutio kya malshe?",
+      "category": "Shopping",
+      "generated_at": "2026-09-29T19:08:15.386937"
+    },
+    {
+      "english": "I'm looking for a souvenir.",
+      "gujarati": "હું એક સંભારણું શોધી રહ્યો છું.",
+      "transliteration": "Hu ek sambharanu shodhi rahyo chhu.",
+      "category": "Shopping",
+      "generated_at": "2026-09-29T19:08:15.386941"
+    },
+    {
+      "english": "Do you have this in a smaller size?",
+      "gujarati": "શું તમારી પાસે આ નાના કદમાં છે?",
+      "transliteration": "Shu tamari pase aa nana kadma chhe?",
+      "category": "Shopping",
+      "generated_at": "2026-09-29T19:08:15.386946"
+    },
+    {
+      "english": "Is there a return policy?",
+      "gujarati": "શું પાછા વાળવાની નીતિ છે?",
+      "transliteration": "Shu paachha valvani niti chhe?",
+      "category": "Shopping",
+      "generated_at": "2026-09-29T19:08:15.386949"
     }
   ],
-  "last_updated": "2026-09-29T18:01:04.773284"
+  "last_updated": "2026-09-29T19:08:15.386951"
 }
