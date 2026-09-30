@@ -13614,7 +13614,42 @@
       "transliteration": "Dādinī vāto, prāchīn jādu.",
       "category": "Family Terms",
       "generated_at": "2026-09-30T21:20:59.326759"
+    },
+    {
+      "english": "The clouds, are gathering, swiftly.",
+      "gujarati": "વાદળો, ઝડપથી, ભેગા થઈ રહ્યા છે.",
+      "transliteration": "Vadalo, jhadapti, bhega thai rahya chhe.",
+      "category": "Weather",
+      "generated_at": "2026-09-30T23:29:07.082929"
+    },
+    {
+      "english": "Raindrops, are falling, softly, now.",
+      "gujarati": "વરસાદના ટીપાં, ધીમે ધીમે, પડી રહ્યા છે.",
+      "transliteration": "Varsadna tipa, dhime dhime, padi rahya chhe.",
+      "category": "Weather",
+      "generated_at": "2026-09-30T23:29:07.082941"
+    },
+    {
+      "english": "A rainbow, arches, across the sky.",
+      "gujarati": "મેઘધનુષ્ય, આકાશમાં, કમાન બનાવે છે.",
+      "transliteration": "Meghdhanushya, akashma, kaman banave chhe.",
+      "category": "Weather",
+      "generated_at": "2026-09-30T23:29:07.082945"
+    },
+    {
+      "english": "Sunshine, feels warm, on my skin.",
+      "gujarati": "સૂર્યપ્રકાશ, ત્વચા પર, હૂંફાળો લાગે છે.",
+      "transliteration": "Suryaprakash, tvacha par, hunfalo lage chhe.",
+      "category": "Weather",
+      "generated_at": "2026-09-30T23:29:07.082947"
+    },
+    {
+      "english": "Thunder rumbles, in the distance.",
+      "gujarati": "દૂર, ગડગડાટ, સંભળાય છે.",
+      "transliteration": "Door, gadgadat, sambhlay chhe.",
+      "category": "Weather",
+      "generated_at": "2026-09-30T23:29:07.082950"
     }
   ],
-  "last_updated": "2026-09-30T21:20:59.326761"
+  "last_updated": "2026-09-30T23:29:07.082952"
 }
