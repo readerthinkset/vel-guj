@@ -13754,7 +13754,42 @@
       "transliteration": "Software updates, bhoolo sudhare chhe.",
       "category": "Technology",
       "generated_at": "2026-10-01T19:15:15.500145"
+    },
+    {
+      "english": "Turn left, where the banyan grows.",
+      "gujarati": "વડ ઉગે ત્યાં ડાબે વળો.",
+      "transliteration": "Vad uge tyan daabe valo.",
+      "category": "Directions",
+      "generated_at": "2026-10-01T21:43:25.909040"
+    },
+    {
+      "english": "Follow the winding lane, ahead.",
+      "gujarati": "આગળ, વળાંકવાળા રસ્તાને અનુસરો.",
+      "transliteration": "Aagal, valankvala rastane anusaro.",
+      "category": "Directions",
+      "generated_at": "2026-10-01T21:43:25.909052"
+    },
+    {
+      "english": "The path forks, take the right.",
+      "gujarati": "રસ્તો બે ભાગમાં વહેંચાય છે, જમણી બાજુ લો.",
+      "transliteration": "Rasto be bhagman vahenchay chhe, jamani baju lo.",
+      "category": "Directions",
+      "generated_at": "2026-10-01T21:43:25.909056"
+    },
+    {
+      "english": "Continue straight, past the big tree.",
+      "gujarati": "મોટા ઝાડની પેલે પાર, સીધા આગળ વધો.",
+      "transliteration": "Mota jhadni pale par, seedha aagal vadho.",
+      "category": "Directions",
+      "generated_at": "2026-10-01T21:43:25.909060"
+    },
+    {
+      "english": "Veer right, by the old well.",
+      "gujarati": "જૂના કૂવા પાસે, જમણી તરફ વળો.",
+      "transliteration": "Juna kuva pase, jamani taraf valo.",
+      "category": "Directions",
+      "generated_at": "2026-10-01T21:43:25.909063"
     }
   ],
-  "last_updated": "2026-10-01T19:15:15.500147"
+  "last_updated": "2026-10-01T21:43:25.909065"
 }
