@@ -14279,7 +14279,42 @@
       "transliteration": "Chandrani rah juo, te sampurna chamakshe.",
       "category": "Patience",
       "generated_at": "2026-10-04T17:58:15.989503"
+    },
+    {
+      "english": "Fire! Need to escape quickly!",
+      "gujarati": "આગ! જલદી ભાગવું પડશે!",
+      "transliteration": "Aag! Jaldī bhāgvũ paḍaśe!",
+      "category": "Emergency",
+      "generated_at": "2026-10-04T20:00:59.776445"
+    },
+    {
+      "english": "Call ambulance, very sick person.",
+      "gujarati": "એમ્બ્યુલન્સ બોલાવો, ખૂબ બીમાર છે.",
+      "transliteration": "Embyulans bolāvo, khūb bīmār che.",
+      "category": "Emergency",
+      "generated_at": "2026-10-04T20:00:59.776459"
+    },
+    {
+      "english": "Accident happened, block the road.",
+      "gujarati": "અકસ્માત થયો, રસ્તો બંધ કરો.",
+      "transliteration": "Aksmāt thayo, rasto bandh karo.",
+      "category": "Emergency",
+      "generated_at": "2026-10-04T20:00:59.776462"
+    },
+    {
+      "english": "Need doctor, immediately please.",
+      "gujarati": "ડોક્ટરની જરૂર છે, તાત્કાલિક.",
+      "transliteration": "Ḍôkṭaranī jarūr che, tātkālik.",
+      "category": "Emergency",
+      "generated_at": "2026-10-04T20:00:59.776465"
+    },
+    {
+      "english": "Lost child, please help find.",
+      "gujarati": "બાળક ખોવાયું, શોધવામાં મદદ કરો.",
+      "transliteration": "Bāḷak khovāyuṁ, śodhavāmāṁ madad karo.",
+      "category": "Emergency",
+      "generated_at": "2026-10-04T20:00:59.776469"
     }
   ],
-  "last_updated": "2026-10-04T17:58:15.989505"
+  "last_updated": "2026-10-04T20:00:59.776471"
 }
