@@ -14419,7 +14419,42 @@
       "transliteration": "Tamaru sthir hruday, margdarshan aape chhe.",
       "category": "Strength",
       "generated_at": "2026-10-05T21:21:50.098071"
+    },
+    {
+      "english": "This color, I really like.",
+      "gujarati": "આ રંગ, મને ખૂબ ગમે છે.",
+      "transliteration": "Aa rang, mane khub game chhe.",
+      "category": "Shopping",
+      "generated_at": "2026-10-05T23:06:13.939638"
+    },
+    {
+      "english": "How much for this item?",
+      "gujarati": "આ વસ્તુની કિંમત કેટલી છે?",
+      "transliteration": "Aa vastuni kimmat ketli chhe?",
+      "category": "Shopping",
+      "generated_at": "2026-10-05T23:06:13.939652"
+    },
+    {
+      "english": "Can I see another option?",
+      "gujarati": "શું હું બીજો વિકલ્પ જોઈ શકું?",
+      "transliteration": "Shu hu bijo vikalp joi shaku?",
+      "category": "Shopping",
+      "generated_at": "2026-10-05T23:06:13.939659"
+    },
+    {
+      "english": "Do you have a discount?",
+      "gujarati": "શું તમારી પાસે ડિસ્કાઉન્ટ છે?",
+      "transliteration": "Shu tamari paase discount chhe?",
+      "category": "Shopping",
+      "generated_at": "2026-10-05T23:06:13.939662"
+    },
+    {
+      "english": "I'm just browsing, thanks.",
+      "gujarati": "હું ફક્ત જોઈ રહ્યો/રહી છું, આભાર.",
+      "transliteration": "Hu fakt joi rahyo/rahi chhu, aabhar.",
+      "category": "Shopping",
+      "generated_at": "2026-10-05T23:06:13.939666"
     }
   ],
-  "last_updated": "2026-10-05T21:21:50.098073"
+  "last_updated": "2026-10-05T23:06:13.939668"
 }
