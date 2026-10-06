@@ -14524,7 +14524,42 @@
       "transliteration": "Aa utsav, khub j romanchak chhe!",
       "category": "Travel",
       "generated_at": "2026-10-06T03:42:04.006345"
+    },
+    {
+      "english": "This dish, smells amazing!",
+      "gujarati": "આ વાનગી, સરસ લાગે છે!",
+      "transliteration": "Aa vangī, saras lāge chhe!",
+      "category": "Restaurant",
+      "generated_at": "2026-10-06T18:15:42.164704"
+    },
+    {
+      "english": "Could I have, the check, please?",
+      "gujarati": "શું મને, બિલ, મળી શકે?",
+      "transliteration": "Shuṁ mane, bil, maḷī shake?",
+      "category": "Restaurant",
+      "generated_at": "2026-10-06T18:15:42.164719"
+    },
+    {
+      "english": "We'd like, to sit, outside.",
+      "gujarati": "અમે, બહાર, બેસવા માંગીએ છીએ.",
+      "transliteration": "Ame, bahār, besavā māṅgīe chhīe.",
+      "category": "Restaurant",
+      "generated_at": "2026-10-06T18:15:42.164724"
+    },
+    {
+      "english": "Is this, spicy, enough?",
+      "gujarati": "શું આ, મસાલેદાર, પૂરતું છે?",
+      "transliteration": "Shuṁ ā, masāledār, pūrtuṁ chhe?",
+      "category": "Restaurant",
+      "generated_at": "2026-10-06T18:15:42.164727"
+    },
+    {
+      "english": "My compliments, to the chef.",
+      "gujarati": "મારા અભિનંદન, શેફને.",
+      "transliteration": "Mārā abhinandan, shefne.",
+      "category": "Restaurant",
+      "generated_at": "2026-10-06T18:15:42.164730"
     }
   ],
-  "last_updated": "2026-10-06T03:42:04.006348"
+  "last_updated": "2026-10-06T18:15:42.164732"
 }
