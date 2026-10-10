@@ -15259,7 +15259,42 @@
       "transliteration": "Bhavishyani shakyatao, rah joi rahi chhe.",
       "category": "Time",
       "generated_at": "2026-10-10T17:16:06.567852"
+    },
+    {
+      "english": "I need water, please.",
+      "gujarati": "મને પાણી જોઈએ, કૃપા કરીને.",
+      "transliteration": "Mane pani joie, krupa karine.",
+      "category": "Basic Phrases",
+      "generated_at": "2026-10-10T18:13:04.348518"
+    },
+    {
+      "english": "How much is it?",
+      "gujarati": "આ કેટલાનું છે?",
+      "transliteration": "Aa ketlanu chhe?",
+      "category": "Basic Phrases",
+      "generated_at": "2026-10-10T18:13:04.348531"
+    },
+    {
+      "english": "Where is the bathroom?",
+      "gujarati": "બાથરૂમ ક્યાં છે?",
+      "transliteration": "Bathroom kyan chhe?",
+      "category": "Basic Phrases",
+      "generated_at": "2026-10-10T18:13:04.348535"
+    },
+    {
+      "english": "It's delicious, thank you.",
+      "gujarati": "સ્વાદિષ્ટ છે, આભાર.",
+      "transliteration": "Svadisht chhe, aabhar.",
+      "category": "Basic Phrases",
+      "generated_at": "2026-10-10T18:13:04.348538"
+    },
+    {
+      "english": "May I have this?",
+      "gujarati": "શું મને આ મળી શકે?",
+      "transliteration": "Shu mane aa mali shake?",
+      "category": "Basic Phrases",
+      "generated_at": "2026-10-10T18:13:04.348541"
     }
   ],
-  "last_updated": "2026-10-10T17:16:06.567854"
+  "last_updated": "2026-10-10T18:13:04.348543"
 }
