@@ -15539,7 +15539,42 @@
       "transliteration": "Aapnu ghar, prem nu malo.",
       "category": "Family Terms",
       "generated_at": "2026-10-11T23:27:06.402896"
+    },
+    {
+      "english": "The wind whispers secrets, through leaves.",
+      "gujarati": "પવન પાંદડાઓમાંથી, રહસ્યો ગણગણે છે.",
+      "transliteration": "Pavan paandadaomanthi, rahasyo ganganne chhe.",
+      "category": "Weather",
+      "generated_at": "2026-10-12T03:06:49.163206"
+    },
+    {
+      "english": "Fog blankets, the early morning.",
+      "gujarati": "ધુમ્મસ સવારને, ધાબળો ઓઢાડે છે.",
+      "transliteration": "Dhummas savarne, dhabalo odhade chhe.",
+      "category": "Weather",
+      "generated_at": "2026-10-12T03:06:49.163219"
+    },
+    {
+      "english": "A gentle breeze, cools the air.",
+      "gujarati": "હળવી લહેર, હવાને ઠંડક આપે છે.",
+      "transliteration": "Halvi laher, havane thandak aape chhe.",
+      "category": "Weather",
+      "generated_at": "2026-10-12T03:06:49.163222"
+    },
+    {
+      "english": "The sun peeks, from behind clouds.",
+      "gujarati": "સૂર્ય વાદળો પાછળથી, ડોકિયું કરે છે.",
+      "transliteration": "Surya vadalo paachalthi, dokiyu kare chhe.",
+      "category": "Weather",
+      "generated_at": "2026-10-12T03:06:49.163224"
+    },
+    {
+      "english": "Lightning flashes, bright and quick.",
+      "gujarati": "વીજળી ચમકે છે, તેજ અને ઝડપી.",
+      "transliteration": "Vijali chamke chhe, tej ane zhadpi.",
+      "category": "Weather",
+      "generated_at": "2026-10-12T03:06:49.163227"
     }
   ],
-  "last_updated": "2026-10-11T23:27:06.402899"
+  "last_updated": "2026-10-12T03:06:49.163229"
 }
