@@ -15714,7 +15714,42 @@
       "transliteration": "Sachu bolayu, hruday mukt.",
       "category": "Courage",
       "generated_at": "2026-10-13T01:49:11.748282"
+    },
+    {
+      "english": "Can you recommend a scenic route?",
+      "gujarati": "શું તમે સુંદર રસ્તો સૂચવી શકો છો?",
+      "transliteration": "Shu tame sundar rasto suchavi shako chho?",
+      "category": "Travel",
+      "generated_at": "2026-10-13T04:22:54.115753"
+    },
+    {
+      "english": "Where can I find local handicrafts?",
+      "gujarati": "મને સ્થાનિક હસ્તકલા ક્યાં મળશે?",
+      "transliteration": "Mane sthanik hastakala kyan malshe?",
+      "category": "Travel",
+      "generated_at": "2026-10-13T04:22:54.115770"
+    },
+    {
+      "english": "This view is breathtaking, isn't it?",
+      "gujarati": "આ નજારો અદભૂત છે, ખરું ને?",
+      "transliteration": "Aa najaro adbhut chhe, kharu ne?",
+      "category": "Travel",
+      "generated_at": "2026-10-13T04:22:54.115774"
+    },
+    {
+      "english": "Let's try some regional delicacies.",
+      "gujarati": "ચાલો, પ્રાદેશિક વાનગીઓ અજમાવીએ.",
+      "transliteration": "Chalo, pradeshik vangio ajmaviye.",
+      "category": "Travel",
+      "generated_at": "2026-10-13T04:22:54.115778"
+    },
+    {
+      "english": "How do I get to the nearest station?",
+      "gujarati": "નજીકના સ્ટેશન પર કેવી રીતે પહોંચાય?",
+      "transliteration": "Najikna station par kevi rite pahonchay?",
+      "category": "Travel",
+      "generated_at": "2026-10-13T04:22:54.115782"
     }
   ],
-  "last_updated": "2026-10-13T01:49:11.748284"
+  "last_updated": "2026-10-13T04:22:54.115784"
 }
