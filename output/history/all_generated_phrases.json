@@ -16029,7 +16029,42 @@
       "transliteration": "Aaram e punahprapti chhe, nabalai nathi.",
       "category": "Health",
       "generated_at": "2026-10-14T20:32:31.881780"
+    },
+    {
+      "english": "A lion's roar, shakes the savanna.",
+      "gujarati": "સિંહની ગર્જના, સવાન્નાને ધ્રુજાવે છે.",
+      "transliteration": "Sinhni garjana, savannane dhrujave chhe.",
+      "category": "Animals",
+      "generated_at": "2026-10-14T22:59:31.454599"
+    },
+    {
+      "english": "Elephants march, with gentle might.",
+      "gujarati": "હાથીઓ કૂચ કરે છે, સૌમ્ય શક્તિ સાથે.",
+      "transliteration": "Hathio kuch kare chhe, saumya shakti sathe.",
+      "category": "Animals",
+      "generated_at": "2026-10-14T22:59:31.454611"
+    },
+    {
+      "english": "Monkeys chatter, in the canopy.",
+      "gujarati": "વાંદરાઓ વાતો કરે છે, વૃક્ષોની ટોચમાં.",
+      "transliteration": "Vandarao vato kare chhe, vruksho ni toch ma.",
+      "category": "Animals",
+      "generated_at": "2026-10-14T22:59:31.454614"
+    },
+    {
+      "english": "A snake slithers, silently through grass.",
+      "gujarati": "સાપ ઘાસમાં, ચૂપચાપ સરકે છે.",
+      "transliteration": "Saap ghas ma, chupchap sarke chhe.",
+      "category": "Animals",
+      "generated_at": "2026-10-14T22:59:31.454618"
+    },
+    {
+      "english": "Butterflies flutter, on painted wings.",
+      "gujarati": "પતંગિયા ઉડે છે, રંગીન પાંખો પર.",
+      "transliteration": "Patangiya ude chhe, rangin pankho par.",
+      "category": "Animals",
+      "generated_at": "2026-10-14T22:59:31.454620"
     }
   ],
-  "last_updated": "2026-10-14T20:32:31.881782"
+  "last_updated": "2026-10-14T22:59:31.454622"
 }
