@@ -16624,7 +16624,42 @@
       "transliteration": "Rasto vale chhe, dabe jao.",
       "category": "Directions",
       "generated_at": "2026-10-18T01:58:15.042465"
+    },
+    {
+      "english": "Which way to the hidden waterfall?",
+      "gujarati": "છુપાયેલા ધોધનો રસ્તો કયો છે?",
+      "transliteration": "Chhupayela dhodhno rasto kayo chhe?",
+      "category": "Travel",
+      "generated_at": "2026-10-18T15:45:02.781659"
+    },
+    {
+      "english": "Let's get lost in these streets.",
+      "gujarati": "ચાલો આ ગલીઓમાં ખોવાઈ જઈએ.",
+      "transliteration": "Chalo aa galioma khovai jaiye.",
+      "category": "Travel",
+      "generated_at": "2026-10-18T15:45:02.781671"
+    },
+    {
+      "english": "This old fort whispers stories.",
+      "gujarati": "આ જૂનો કિલ્લો વાતો કરે છે.",
+      "transliteration": "Aa juno killo vato kare chhe.",
+      "category": "Travel",
+      "generated_at": "2026-10-18T15:45:02.781676"
+    },
+    {
+      "english": "Is this the right path for the viewpoint?",
+      "gujarati": "શું આ વ્યૂપોઇન્ટ માટે સાચો રસ્તો છે?",
+      "transliteration": "Shu aa viewpoint mate sacho rasto chhe?",
+      "category": "Travel",
+      "generated_at": "2026-10-18T15:45:02.781680"
+    },
+    {
+      "english": "Let's find a quiet little cafe.",
+      "gujarati": "ચાલો એક શાંત નાનકડું કાફે શોધીએ.",
+      "transliteration": "Chalo ek shant nanakdu cafe shodhiye.",
+      "category": "Travel",
+      "generated_at": "2026-10-18T15:45:02.781683"
     }
   ],
-  "last_updated": "2026-10-18T01:58:15.042466"
+  "last_updated": "2026-10-18T15:45:02.781685"
 }
