@@ -16589,7 +16589,42 @@
       "transliteration": "Mara hridaythi, ek shant aabhar.",
       "category": "Gratitude",
       "generated_at": "2026-10-17T21:58:41.387820"
+    },
+    {
+      "english": "Head towards, the distant hills.",
+      "gujarati": "દૂરના ડુંગરો તરફ, આગળ વધો.",
+      "transliteration": "Dur na dungaro taraf, aagal vadho.",
+      "category": "Directions",
+      "generated_at": "2026-10-18T01:58:15.042443"
+    },
+    {
+      "english": "Go past, the noisy market.",
+      "gujarati": "ઘોંઘાટવાળા બજાર પાસેથી, પસાર થાઓ.",
+      "transliteration": "Ghonghatvala bajar pasethi, pasar thao.",
+      "category": "Directions",
+      "generated_at": "2026-10-18T01:58:15.042456"
+    },
+    {
+      "english": "Follow the river, bend right.",
+      "gujarati": "નદીની સાથે, જમણે વળો.",
+      "transliteration": "Nadi ni sathe, jamne valo.",
+      "category": "Directions",
+      "generated_at": "2026-10-18T01:58:15.042460"
+    },
+    {
+      "english": "Walk towards, the rising sun.",
+      "gujarati": "ઉગતા સૂરજ તરફ, ચાલો.",
+      "transliteration": "Ugta suraj taraf, chalo.",
+      "category": "Directions",
+      "generated_at": "2026-10-18T01:58:15.042462"
+    },
+    {
+      "english": "The road curves, bear left.",
+      "gujarati": "રસ્તો વળે છે, ડાબે જાઓ.",
+      "transliteration": "Rasto vale chhe, dabe jao.",
+      "category": "Directions",
+      "generated_at": "2026-10-18T01:58:15.042465"
     }
   ],
-  "last_updated": "2026-10-17T21:58:41.387821"
+  "last_updated": "2026-10-18T01:58:15.042466"
 }
