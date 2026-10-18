@@ -16659,7 +16659,42 @@
       "transliteration": "Chalo ek shant nanakdu cafe shodhiye.",
       "category": "Travel",
       "generated_at": "2026-10-18T15:45:02.781683"
+    },
+    {
+      "english": "This fits, perfectly.",
+      "gujarati": "આ, બરાબર ફિટ થાય છે.",
+      "transliteration": "Aa, barabar fit thay chhe.",
+      "category": "Shopping",
+      "generated_at": "2026-10-18T17:04:17.201233"
+    },
+    {
+      "english": "Do you have, smaller size?",
+      "gujarati": "આમાં, નાનું માપ મળશે?",
+      "transliteration": "Aama, nanu maap malshe?",
+      "category": "Shopping",
+      "generated_at": "2026-10-18T17:04:17.201248"
+    },
+    {
+      "english": "I need, a gift.",
+      "gujarati": "મારે, ભેટ જોઈએ છે.",
+      "transliteration": "Maare, bhet joie chhe.",
+      "category": "Shopping",
+      "generated_at": "2026-10-18T17:04:17.201252"
+    },
+    {
+      "english": "Wrap it, please.",
+      "gujarati": "આને, પેક કરી આપો.",
+      "transliteration": "Aane, pack kari aapo.",
+      "category": "Shopping",
+      "generated_at": "2026-10-18T17:04:17.201255"
+    },
+    {
+      "english": "Where are, the shoes?",
+      "gujarati": "બૂટ, ક્યાં છે?",
+      "transliteration": "Boot, kya chhe?",
+      "category": "Shopping",
+      "generated_at": "2026-10-18T17:04:17.201258"
     }
   ],
-  "last_updated": "2026-10-18T15:45:02.781685"
+  "last_updated": "2026-10-18T17:04:17.201260"
 }
