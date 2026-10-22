@@ -17324,7 +17324,42 @@
       "transliteration": "Duniya juo, navi aankho thi.",
       "category": "Mindfulness",
       "generated_at": "2026-10-22T17:09:17.919280"
+    },
+    {
+      "english": "Help! I'm trapped inside.",
+      "gujarati": "મદદ કરો! હું અંદર ફસાઈ ગયો છું.",
+      "transliteration": "Madad karo! Hu andar fasai gayo chhu.",
+      "category": "Emergency",
+      "generated_at": "2026-10-22T18:33:29.186908"
+    },
+    {
+      "english": "Need police, urgently now.",
+      "gujarati": "પોલીસની જરૂર છે, તાત્કાલિક.",
+      "transliteration": "Police ni jarur chhe, tatkalik.",
+      "category": "Emergency",
+      "generated_at": "2026-10-22T18:33:29.186923"
+    },
+    {
+      "english": "Someone is drowning, quick!",
+      "gujarati": "કોઈ ડૂબી રહ્યું છે, જલદી!",
+      "transliteration": "Koi dubi rahyu chhe, jaldi!",
+      "category": "Emergency",
+      "generated_at": "2026-10-22T18:33:29.186927"
+    },
+    {
+      "english": "Gas leak, evacuate this area.",
+      "gujarati": "ગેસ લીક, આ વિસ્તાર ખાલી કરો.",
+      "transliteration": "Gas leak, aa vistar khali karo.",
+      "category": "Emergency",
+      "generated_at": "2026-10-22T18:33:29.186931"
+    },
+    {
+      "english": "I can't breathe, help me.",
+      "gujarati": "મને શ્વાસ નથી આવતો, મદદ કરો.",
+      "transliteration": "Mane shwas nathi aavato, madad karo.",
+      "category": "Emergency",
+      "generated_at": "2026-10-22T18:33:29.186937"
     }
   ],
-  "last_updated": "2026-10-22T17:09:17.919282"
+  "last_updated": "2026-10-22T18:33:29.186938"
 }
