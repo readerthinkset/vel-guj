@@ -17884,7 +17884,42 @@
       "transliteration": "Andar sambhalo, satya bolo.",
       "category": "Balance",
       "generated_at": "2026-10-25T19:35:52.322274"
+    },
+    {
+      "english": "Aromatic spices, fill the kitchen.",
+      "gujarati": "સુગંધિત મસાલા, રસોડામાં મહેંકી રહ્યા છે.",
+      "transliteration": "Sugandhit masala, rasodama mahenki rahya chhe.",
+      "category": "Food",
+      "generated_at": "2026-10-25T22:35:57.771735"
+    },
+    {
+      "english": "Freshly baked bread, warm and soft.",
+      "gujarati": "તાજી બેક કરેલી રોટલી, ગરમ અને નરમ.",
+      "transliteration": "Taji bake kareli rotli, garam ane naram.",
+      "category": "Food",
+      "generated_at": "2026-10-25T22:35:57.771748"
+    },
+    {
+      "english": "Juicy mangoes, summer's sweet gift.",
+      "gujarati": "રસદાર કેરી, ઉનાળાની મીઠી ભેટ.",
+      "transliteration": "Rasdar keri, unalani mithi bhet.",
+      "category": "Food",
+      "generated_at": "2026-10-25T22:35:57.771752"
+    },
+    {
+      "english": "Hearty lentil soup, a wholesome meal.",
+      "gujarati": "પૌષ્ટિક દાળનો સૂપ, એક સંપૂર્ણ ભોજન.",
+      "transliteration": "Paushtik dalno soup, ek sampurna bhojan.",
+      "category": "Food",
+      "generated_at": "2026-10-25T22:35:57.771756"
+    },
+    {
+      "english": "Crispy fried snacks, a tasty treat.",
+      "gujarati": "ક્રિસ્પી તળેલી વાનગીઓ, એક સ્વાદિષ્ટ નાસ્તો.",
+      "transliteration": "Crispy taleli vangio, ek svadisht nasta.",
+      "category": "Food",
+      "generated_at": "2026-10-25T22:35:57.771760"
     }
   ],
-  "last_updated": "2026-10-25T19:35:52.322276"
+  "last_updated": "2026-10-25T22:35:57.771762"
 }
