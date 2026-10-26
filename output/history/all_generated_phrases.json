@@ -17989,7 +17989,42 @@
       "transliteration": "Tamaro aatma, tejasvi chamke chhe.",
       "category": "Courage",
       "generated_at": "2026-10-26T18:41:37.068272"
+    },
+    {
+      "english": "Veer right at the ancient temple.",
+      "gujarati": "પ્રાચીન મંદિર પાસે જમણે વળો.",
+      "transliteration": "Prachin mandir paase jamne valo.",
+      "category": "Directions",
+      "generated_at": "2026-10-26T19:57:08.619431"
+    },
+    {
+      "english": "Turn left where the banyan tree stands.",
+      "gujarati": "વડના ઝાડ પાસે ડાબે વળો.",
+      "transliteration": "Vadna jhaad paase daabe valo.",
+      "category": "Directions",
+      "generated_at": "2026-10-26T19:57:08.619446"
+    },
+    {
+      "english": "Continue straight, beyond the busy square.",
+      "gujarati": "વ્યસ્ત ચોકથી આગળ, સીધા ચાલો.",
+      "transliteration": "Vyast chok thi aagal, sidha chalo.",
+      "category": "Directions",
+      "generated_at": "2026-10-26T19:57:08.619450"
+    },
+    {
+      "english": "Follow the narrow lane, to the end.",
+      "gujarati": "સાંકડી ગલીને, અંત સુધી અનુસરો.",
+      "transliteration": "Saankadi galine, ant sudhi anusaro.",
+      "category": "Directions",
+      "generated_at": "2026-10-26T19:57:08.619454"
+    },
+    {
+      "english": "The path winds, head for the blue peak.",
+      "gujarati": "રસ્તો વળે છે, વાદળી શિખર તરફ જાઓ.",
+      "transliteration": "Rasto vale chhe, vadli shikhar taraf jao.",
+      "category": "Directions",
+      "generated_at": "2026-10-26T19:57:08.619458"
     }
   ],
-  "last_updated": "2026-10-26T18:41:37.068274"
+  "last_updated": "2026-10-26T19:57:08.619461"
 }
