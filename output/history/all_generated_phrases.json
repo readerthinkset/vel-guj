@@ -18724,7 +18724,42 @@
       "transliteration": "Aa madadrup haath, kharekhar aabhari.",
       "category": "Gratitude",
       "generated_at": "2026-10-30T19:26:42.649145"
+    },
+    {
+      "english": "Fire! Get out fast!",
+      "gujarati": "આગ! જલ્દી બહાર નીકળો!",
+      "transliteration": "Aag! Jaldi bahar nikalo!",
+      "category": "Emergency",
+      "generated_at": "2026-10-30T21:29:25.856279"
+    },
+    {
+      "english": "I need medical help, now!",
+      "gujarati": "મને તબીબી મદદ જોઈએ, અત્યારે!",
+      "transliteration": "Mane tabibi madad joie, atyare!",
+      "category": "Emergency",
+      "generated_at": "2026-10-30T21:29:25.856298"
+    },
+    {
+      "english": "Lost my way, please assist.",
+      "gujarati": "રસ્તો ભૂલી ગયો/ગઈ, કૃપા કરીને મદદ કરો.",
+      "transliteration": "Rasto bhuli gayo/gai, kripa karine madad karo.",
+      "category": "Emergency",
+      "generated_at": "2026-10-30T21:29:25.856303"
+    },
+    {
+      "english": "Kidnapped! Call authorities.",
+      "gujarati": "અપહરણ થયું છે! અધિકારીઓને બોલાવો.",
+      "transliteration": "Apaharan thayu chhe! Adhikarione bolavo.",
+      "category": "Emergency",
+      "generated_at": "2026-10-30T21:29:25.856306"
+    },
+    {
+      "english": "Accident! Need an ambulance.",
+      "gujarati": "અકસ્માત! એમ્બ્યુલન્સ જોઈએ.",
+      "transliteration": "Akasmat! Ambulance joie.",
+      "category": "Emergency",
+      "generated_at": "2026-10-30T21:29:25.856310"
     }
   ],
-  "last_updated": "2026-10-30T19:26:42.649147"
+  "last_updated": "2026-10-30T21:29:25.856312"
 }
