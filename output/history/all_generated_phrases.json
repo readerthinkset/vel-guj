@@ -19109,7 +19109,42 @@
       "transliteration": "Nilam vadali, shaanpanni shant undai.",
       "category": "Colors",
       "generated_at": "2026-11-01T21:11:07.254946"
+    },
+    {
+      "english": "Go past the spice market, then turn.",
+      "gujarati": "મસાલા બજાર પાસેથી જાઓ, પછી વળો.",
+      "transliteration": "Masala bajar pasethi jao, pachi valo.",
+      "category": "Directions",
+      "generated_at": "2026-11-01T23:38:43.583407"
+    },
+    {
+      "english": "Follow the sound of the market bells.",
+      "gujarati": "બજારની ઘંટડીઓના અવાજને અનુસરો.",
+      "transliteration": "Bajar ni ghantadino avaj ne anusaro.",
+      "category": "Directions",
+      "generated_at": "2026-11-01T23:38:43.583422"
+    },
+    {
+      "english": "Take the third street, near the sweet shop.",
+      "gujarati": "ત્રીજા રસ્તા પર જાઓ, મીઠાઈની દુકાન પાસે.",
+      "transliteration": "Tija rasta par jao, mithai ni dukan pase.",
+      "category": "Directions",
+      "generated_at": "2026-11-01T23:38:43.583427"
+    },
+    {
+      "english": "Head towards the old fort walls.",
+      "gujarati": "જૂના કિલ્લાની દિવાલો તરફ જાઓ.",
+      "transliteration": "Juna killani divalo taraf jao.",
+      "category": "Directions",
+      "generated_at": "2026-11-01T23:38:43.583430"
+    },
+    {
+      "english": "The painted archway, that's your turn.",
+      "gujarati": "રંગેલા કમાન, તે તમારો વળાંક છે.",
+      "transliteration": "Rangela kaman, te tamaro valank chhe.",
+      "category": "Directions",
+      "generated_at": "2026-11-01T23:38:43.583434"
     }
   ],
-  "last_updated": "2026-11-01T21:11:07.254948"
+  "last_updated": "2026-11-01T23:38:43.583436"
 }
