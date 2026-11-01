@@ -19039,7 +19039,42 @@
       "transliteration": "Maitripurna namaskar, aaje.",
       "category": "Greetings",
       "generated_at": "2026-11-01T17:56:12.877614"
+    },
+    {
+      "english": "Which way to the temple?",
+      "gujarati": "મંદિર કઈ બાજુ છે?",
+      "transliteration": "Mandir kai baju chhe?",
+      "category": "Travel",
+      "generated_at": "2026-11-01T18:56:44.327452"
+    },
+    {
+      "english": "Can you recommend a good guide?",
+      "gujarati": "શું તમે સારા માર્ગદર્શકની ભલામણ કરી શકો?",
+      "transliteration": "Shu tame sara margdarshakni bhalaman kari shako?",
+      "category": "Travel",
+      "generated_at": "2026-11-01T18:56:44.327464"
+    },
+    {
+      "english": "How far is the train station?",
+      "gujarati": "રેલવે સ્ટેશન કેટલું દૂર છે?",
+      "transliteration": "Railway station ketlu dur chhe?",
+      "category": "Travel",
+      "generated_at": "2026-11-01T18:56:44.327468"
+    },
+    {
+      "english": "I need a taxi, please.",
+      "gujarati": "મને એક ટેક્સી જોઈએ છે, મહેરબાની કરીને.",
+      "transliteration": "Mane ek taxi joie chhe, meherbani karine.",
+      "category": "Travel",
+      "generated_at": "2026-11-01T18:56:44.327472"
+    },
+    {
+      "english": "Where can I buy local crafts?",
+      "gujarati": "હું સ્થાનિક હસ્તકલા ક્યાંથી ખરીદી શકું?",
+      "transliteration": "Hu sthanik hastkala kyathi kharidi shaku?",
+      "category": "Travel",
+      "generated_at": "2026-11-01T18:56:44.327475"
     }
   ],
-  "last_updated": "2026-11-01T17:56:12.877616"
+  "last_updated": "2026-11-01T18:56:44.327477"
 }
