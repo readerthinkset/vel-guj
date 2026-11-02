@@ -19179,7 +19179,42 @@
       "transliteration": "Undanpurvak sambhalo, vadhu samjo.",
       "category": "Wisdom",
       "generated_at": "2026-11-02T06:01:26.689472"
+    },
+    {
+      "english": "Which dish, is most popular?",
+      "gujarati": "કઈ વાનગી, સૌથી વધુ લોકપ્રિય છે?",
+      "transliteration": "Kai vangi, sauthi vadhu lokpriya chhe?",
+      "category": "Restaurant",
+      "generated_at": "2026-11-02T21:42:38.331676"
+    },
+    {
+      "english": "Could I have, the menu, please?",
+      "gujarati": "શું મને, મેનુ, મળી શકે?",
+      "transliteration": "Shu mane, menu, mali shake?",
+      "category": "Restaurant",
+      "generated_at": "2026-11-02T21:42:38.331690"
+    },
+    {
+      "english": "This tastes, amazing!",
+      "gujarati": "આનો સ્વાદ, અદ્ભુત છે!",
+      "transliteration": "Aano swad, adbhut chhe!",
+      "category": "Restaurant",
+      "generated_at": "2026-11-02T21:42:38.331693"
+    },
+    {
+      "english": "One of each, please.",
+      "gujarati": "દરેકમાંથી એક, કૃપા કરીને.",
+      "transliteration": "Darekmathi ek, krupa karine.",
+      "category": "Restaurant",
+      "generated_at": "2026-11-02T21:42:38.331695"
+    },
+    {
+      "english": "Is this, spicy?",
+      "gujarati": "શું આ, તીખું છે?",
+      "transliteration": "Shu aa, tikhu chhe?",
+      "category": "Restaurant",
+      "generated_at": "2026-11-02T21:42:38.331697"
     }
   ],
-  "last_updated": "2026-11-02T06:01:26.689474"
+  "last_updated": "2026-11-02T21:42:38.331700"
 }
