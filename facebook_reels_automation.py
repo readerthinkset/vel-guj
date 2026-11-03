@@ -25,7 +25,7 @@ AI_MODEL = os.getenv("AI_MODEL")
 
 if not AI_MODEL:
     raise ValueError(
-        "AI_MODEL not set! Please add 'AI_MODEL=gemini-fast' to your .env file. "
+        "AI_MODEL not set! Please add 'AI_MODEL=openai/gpt-5.4-nano' to your .env file. "
         "For GitHub Actions: Add AI_MODEL to repository secrets."
     )
 
@@ -361,7 +361,7 @@ def generate_phrases(category_english: str, num_phrases: int = 5) -> list:
     combined_avoid = list(dict.fromkeys(recent_cat + recent_all))
 
     collected = []
-    models_to_try = [AI_MODEL or "gemini-fast", "openai-fast", "openai", "mistral"]
+    models_to_try = [AI_MODEL or "openai/gpt-5.4-nano", "openai-fast", "openai/gpt-5.4-nano", "mistral"]
     seen_models = set()
     models = [m for m in models_to_try if m and not (m in seen_models or seen_models.add(m))]
 
