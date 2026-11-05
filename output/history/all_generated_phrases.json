@@ -19669,7 +19669,42 @@
       "transliteration": "Shu najikma shauchalay chhe?",
       "category": "Basic Phrases",
       "generated_at": "2026-11-05T00:58:08.439517"
+    },
+    {
+      "english": "Take mindful sips, soothe your stomach.",
+      "gujarati": "સાવચેત ઘૂંટ લો, પેટને શાંત કરો.",
+      "transliteration": "Saavchet ghoont lo, petne shaant karo.",
+      "category": "Health",
+      "generated_at": "2026-11-05T06:44:55.293134"
+    },
+    {
+      "english": "Wash hands, prevent germs, stay calm.",
+      "gujarati": "હાથ ધોઇ લો, જંતુઓ રોકો, શાંત રહો.",
+      "transliteration": "Hath dhoyi lo, jantuo roko, shaant raho.",
+      "category": "Health",
+      "generated_at": "2026-11-05T06:44:55.293148"
+    },
+    {
+      "english": "Rest your eyes, blink slowly now.",
+      "gujarati": "આંખોને આરામ આપો, ધીમે ઝબકાવો.",
+      "transliteration": "Aankhone aaram aapo, dheeme jhabkaavo.",
+      "category": "Health",
+      "generated_at": "2026-11-05T06:44:55.293151"
+    },
+    {
+      "english": "Morning walk, let muscles wake up.",
+      "gujarati": "સવારની ચાલ, મસલ્સ જાગે દો.",
+      "transliteration": "Savarni chaal, muscles jaage do.",
+      "category": "Health",
+      "generated_at": "2026-11-05T06:44:55.293154"
+    },
+    {
+      "english": "Stand tall, breathe deep, relax shoulders.",
+      "gujarati": "સીધા ઊભા રહો, ઊંડો શ્વાસ લો, ખભા ઢીલા કરો.",
+      "transliteration": "Seedha ubha raho, undho shvaas lo, khabha dhila karo.",
+      "category": "Health",
+      "generated_at": "2026-11-05T06:44:55.293157"
     }
   ],
-  "last_updated": "2026-11-05T00:58:08.439519"
+  "last_updated": "2026-11-05T06:44:55.293159"
 }
