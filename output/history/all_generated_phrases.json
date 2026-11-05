@@ -19634,7 +19634,42 @@
       "transliteration": "Ghabdat ghate chhe, tamara shabdo vadhe chhe.",
       "category": "Confidence",
       "generated_at": "2026-11-05T00:10:28.787493"
+    },
+    {
+      "english": "Where is the nearest bus stop?",
+      "gujarati": "નજીકનું બસ સ્ટોપ ક્યાં છે?",
+      "transliteration": "Najiknu bas stop kya chhe?",
+      "category": "Basic Phrases",
+      "generated_at": "2026-11-05T00:58:08.439488"
+    },
+    {
+      "english": "I don’t understand Gujarati yet.",
+      "gujarati": "હું હજી ગુજરાતી સમજતો નથી.",
+      "transliteration": "Hu haji Gujarati samajto nathi.",
+      "category": "Basic Phrases",
+      "generated_at": "2026-11-05T00:58:08.439504"
+    },
+    {
+      "english": "Please write it again, slowly.",
+      "gujarati": "કૃપા કરીને ફરી લખો, ધીમે.",
+      "transliteration": "Krupya pachi farī lakho, dheeme.",
+      "category": "Basic Phrases",
+      "generated_at": "2026-11-05T00:58:08.439509"
+    },
+    {
+      "english": "What time does the shop close?",
+      "gujarati": "દુકાન કેટલા વાગ્યે બંધ થાય છે?",
+      "transliteration": "Dukan ketla vagye bandh thay chhe?",
+      "category": "Basic Phrases",
+      "generated_at": "2026-11-05T00:58:08.439514"
+    },
+    {
+      "english": "Is there a restroom nearby?",
+      "gujarati": "શું નજીકમાં શૌચાલય છે?",
+      "transliteration": "Shu najikma shauchalay chhe?",
+      "category": "Basic Phrases",
+      "generated_at": "2026-11-05T00:58:08.439517"
     }
   ],
-  "last_updated": "2026-11-05T00:10:28.787494"
+  "last_updated": "2026-11-05T00:58:08.439519"
 }
