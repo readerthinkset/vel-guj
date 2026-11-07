@@ -20089,7 +20089,42 @@
       "transliteration": "Shvaas lo, andar ni shakti sthir karo.",
       "category": "Strength",
       "generated_at": "2026-11-07T18:47:55.813207"
+    },
+    {
+      "english": "Walk to the banyan tree, turn left.",
+      "gujarati": "વટવૃક્ષ પાસે જાઓ, ડાબે વળો.",
+      "transliteration": "Vatavruksh pase jao, dabi valo.",
+      "category": "Directions",
+      "generated_at": "2026-11-07T20:52:40.091586"
+    },
+    {
+      "english": "Go straight, past the water fountain.",
+      "gujarati": "સીધા જાઓ, પાણીના ફવારા પાસે સુધી.",
+      "transliteration": "Sidha jao, panina farara pase sudhi.",
+      "category": "Directions",
+      "generated_at": "2026-11-07T20:52:40.091599"
+    },
+    {
+      "english": "At the corner, pause, look for stairs.",
+      "gujarati": "મૂળે રોકાઓ, જુઓ સીડીઓ ક્યાં છે.",
+      "transliteration": "Mule rokao, juo sidiya kya chhe.",
+      "category": "Directions",
+      "generated_at": "2026-11-07T20:52:40.091603"
+    },
+    {
+      "english": "Cross the bridge, then follow the lane.",
+      "gujarati": "પુલ પાર કરો, પછી આડું રસ્તો અનુસરો.",
+      "transliteration": "Pul par karo, pachi aadu rasto anusaro.",
+      "category": "Directions",
+      "generated_at": "2026-11-07T20:52:40.091606"
+    },
+    {
+      "english": "When the road splits, take the right.",
+      "gujarati": "જ્યારે રસ્તો બે ભાગે ફૂટે, જમણે જાઓ.",
+      "transliteration": "Jyare rasto be bhage fute, jamane jao.",
+      "category": "Directions",
+      "generated_at": "2026-11-07T20:52:40.091608"
     }
   ],
-  "last_updated": "2026-11-07T18:47:55.813208"
+  "last_updated": "2026-11-07T20:52:40.091610"
 }
