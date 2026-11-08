@@ -20194,7 +20194,42 @@
       "transliteration": "Vachno nahi, karyo pasand karo.",
       "category": "Wisdom",
       "generated_at": "2026-11-08T05:59:25.923736"
+    },
+    {
+      "english": "Tap start, let the dashboard breathe.",
+      "gujarati": "સ્ટાર્ટ ટૅપ કરો, ડૅશબોર્ડને શ્વાસ લેવા દો.",
+      "transliteration": "Start tap karo, dashboardne shvaas leva do.",
+      "category": "Technology",
+      "generated_at": "2026-11-08T17:55:38.523669"
+    },
+    {
+      "english": "Drag cards, build your data story.",
+      "gujarati": "કાર્ડ્સ ખેંચો, તમારી ડેટાની કહાની બનાવો.",
+      "transliteration": "Cards kheecho, tamari data ni kahani banao.",
+      "category": "Technology",
+      "generated_at": "2026-11-08T17:55:38.523684"
+    },
+    {
+      "english": "Sync your notes, across every device.",
+      "gujarati": "તમારી નોટ્સ સિંક કરો, દરેક ડિવાઇસ પર.",
+      "transliteration": "Tamari notes sync karo, pratyek device par.",
+      "category": "Technology",
+      "generated_at": "2026-11-08T17:55:38.523688"
+    },
+    {
+      "english": "Scroll slowly, scan the logs quietly.",
+      "gujarati": "ધીમે સ્ક્રોલ કરો, લોગ્સ શાંતિથી જુઓ.",
+      "transliteration": "Dheme scroll karo, logs shaantithi juo.",
+      "category": "Technology",
+      "generated_at": "2026-11-08T17:55:38.523692"
+    },
+    {
+      "english": "Ping once, check latency before posting.",
+      "gujarati": "એકવાર પિંગ કરો, પોસ્ટ કરતા પહેલા લેટન્સી તપાસો.",
+      "transliteration": "Ekvar ping karo, post karta pahela latency jacho.",
+      "category": "Technology",
+      "generated_at": "2026-11-08T17:55:38.523696"
     }
   ],
-  "last_updated": "2026-11-08T05:59:25.923739"
+  "last_updated": "2026-11-08T17:55:38.523698"
 }
