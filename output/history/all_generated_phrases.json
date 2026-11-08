@@ -20264,7 +20264,42 @@
       "transliteration": "Vaancho, viraam lo, bolo, paachhi smit karo.",
       "category": "Motivation",
       "generated_at": "2026-11-08T18:50:39.737440"
+    },
+    {
+      "english": "Help, there's a gas smell, run!",
+      "gujarati": "મદદ કરો, ગેસની દુર્ગંધ છે, દોડો!",
+      "transliteration": "Madd karō, gesni durgandh chhe, dōḍō!",
+      "category": "Emergency",
+      "generated_at": "2026-11-08T21:08:25.485265"
+    },
+    {
+      "english": "Stop! Thief nearby, call security now.",
+      "gujarati": "રોકો! ચોર નજીક છે, હમણાં જ સુરક્ષા બોલાવો.",
+      "transliteration": "Rōkō! chōr najik chhe, hamnān ja suraksha bolāvo.",
+      "category": "Emergency",
+      "generated_at": "2026-11-08T21:08:25.485278"
+    },
+    {
+      "english": "I’m choking, call for help now!",
+      "gujarati": "મને શ્વાસ રૂંધાઈ રહ્યો છે, હવે મદદ બોલાવો!",
+      "transliteration": "Mane shvaas rundhai rahyo chhe, have madad bolāvo!",
+      "category": "Emergency",
+      "generated_at": "2026-11-08T21:08:25.485283"
+    },
+    {
+      "english": "Power outage—stay away from wires!",
+      "gujarati": "વીજ બંધ છે—તારોથી દૂર રહો!",
+      "transliteration": "Vīj bandh chhe—tārōthi dur rahō!",
+      "category": "Emergency",
+      "generated_at": "2026-11-08T21:08:25.485287"
+    },
+    {
+      "english": "Earthquake—get under a table now!",
+      "gujarati": "ભૂકંપ—હવે જ ટેબલ નીચે જાવ!",
+      "transliteration": "Bhūkamp—have ja ṭebal nīche jāv!",
+      "category": "Emergency",
+      "generated_at": "2026-11-08T21:08:25.485291"
     }
   ],
-  "last_updated": "2026-11-08T18:50:39.737441"
+  "last_updated": "2026-11-08T21:08:25.485293"
 }
