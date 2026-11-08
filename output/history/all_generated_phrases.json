@@ -20299,7 +20299,42 @@
       "transliteration": "Bhūkamp—have ja ṭebal nīche jāv!",
       "category": "Emergency",
       "generated_at": "2026-11-08T21:08:25.485291"
+    },
+    {
+      "english": "How spicy is this curry, really?",
+      "gujarati": "આ કરીમાં મરચું કેટલું, ખરેખર?",
+      "transliteration": "Aa karimā murchu ketalu, kharekhar?",
+      "category": "Restaurant",
+      "generated_at": "2026-11-08T23:45:50.650218"
+    },
+    {
+      "english": "Do you have fresh hot naan?",
+      "gujarati": "શું તમારી પાસે તાજું ગરમ નાન છે?",
+      "transliteration": "Shu tamārī pāsē tāju garam naan chhe?",
+      "category": "Restaurant",
+      "generated_at": "2026-11-08T23:45:50.650234"
+    },
+    {
+      "english": "Can I try a thali, please?",
+      "gujarati": "શું હું થાળી અજમાવી શકું, કૃપા કરીને?",
+      "transliteration": "Shu huṁ thālī ajmāvī shakūṁ, krupā karīne?",
+      "category": "Restaurant",
+      "generated_at": "2026-11-08T23:45:50.650236"
+    },
+    {
+      "english": "What’s your chef’s special today, here?",
+      "gujarati": "આજે અહીં તમારા શેફનું સ્પેશિયલ શું છે?",
+      "transliteration": "Aje ahiṁ tamārā chef-nu special shuṁ chhe?",
+      "category": "Restaurant",
+      "generated_at": "2026-11-08T23:45:50.650239"
+    },
+    {
+      "english": "May I taste the chutney, first?",
+      "gujarati": "શું હું પહેલા ચટણીનો સ્વાદ લઈ શકું?",
+      "transliteration": "Shu huṁ pahelā chatṇīnō svād laī shakūṁ?",
+      "category": "Restaurant",
+      "generated_at": "2026-11-08T23:45:50.650241"
     }
   ],
-  "last_updated": "2026-11-08T21:08:25.485293"
+  "last_updated": "2026-11-08T23:45:50.650242"
 }
