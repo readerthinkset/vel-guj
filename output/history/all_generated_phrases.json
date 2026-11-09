@@ -20334,7 +20334,42 @@
       "transliteration": "Shu huṁ pahelā chatṇīnō svād laī shakūṁ?",
       "category": "Restaurant",
       "generated_at": "2026-11-08T23:45:50.650241"
+    },
+    {
+      "english": "Namaste, welcome, how are you?",
+      "gujarati": "નમસ્તે, આવકાર, તમે કેમ છો?",
+      "transliteration": "Namaste, aavkaar, tame kem cho?",
+      "category": "Greetings",
+      "generated_at": "2026-11-09T06:24:23.977313"
+    },
+    {
+      "english": "Hello, I’m happy to meet you.",
+      "gujarati": "નમસ્તે, તમને મળીને આનંદ થયો.",
+      "transliteration": "Namaste, tamne maline aanand thayo.",
+      "category": "Greetings",
+      "generated_at": "2026-11-09T06:24:23.977327"
+    },
+    {
+      "english": "Good day, may your journey start well.",
+      "gujarati": "શુભ દિવસ, તમારી સફર સારી રીતે શરૂ થાય.",
+      "transliteration": "Shubh divas, tamari safar sari rite sharu thay.",
+      "category": "Greetings",
+      "generated_at": "2026-11-09T06:24:23.977329"
+    },
+    {
+      "english": "Greetings, hope your day feels easy.",
+      "gujarati": "નમસ્કાર, તમારો દિવસ સરળ લાગે.",
+      "transliteration": "Namaskar, tamaro divas saral lage.",
+      "category": "Greetings",
+      "generated_at": "2026-11-09T06:24:23.977331"
+    },
+    {
+      "english": "Hi there, warm wishes, namaste!",
+      "gujarati": "હાય, ઉષ્માભરી શુભેચ્છાઓ, નમસ્તે!",
+      "transliteration": "Hai, ushmarbari shubhechchhaao, namaste!",
+      "category": "Greetings",
+      "generated_at": "2026-11-09T06:24:23.977333"
     }
   ],
-  "last_updated": "2026-11-08T23:45:50.650242"
+  "last_updated": "2026-11-09T06:24:23.977334"
 }
