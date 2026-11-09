@@ -20369,7 +20369,42 @@
       "transliteration": "Hai, ushmarbari shubhechchhaao, namaste!",
       "category": "Greetings",
       "generated_at": "2026-11-09T06:24:23.977333"
+    },
+    {
+      "english": "Morning light, start your goals gently.",
+      "gujarati": "સવારેની રોશની, ધીમે ધીમે તમારા લક્ષ્યો શરૂ કરો.",
+      "transliteration": "Saareeni roshni, dheeme dheeme tamara lakshyo sharu karo.",
+      "category": "Time",
+      "generated_at": "2026-11-09T23:26:42.215686"
+    },
+    {
+      "english": "At noon, breathe, then keep moving.",
+      "gujarati": "બપોરે, શ્વાસ લો, પછી આગળ વધો.",
+      "transliteration": "Bapore, shvas lo, pachi agad vadho.",
+      "category": "Time",
+      "generated_at": "2026-11-09T23:26:42.215703"
+    },
+    {
+      "english": "Dusk arrives, reflect for ten minutes.",
+      "gujarati": "સાંજ પડે, દસ મિનિટ વિચાર કરો.",
+      "transliteration": "Sanj pade, das minit vichar karo.",
+      "category": "Time",
+      "generated_at": "2026-11-09T23:26:42.215707"
+    },
+    {
+      "english": "Night falls, study a little, stop.",
+      "gujarati": "રાત પડે, થોડું ભણો, પછી રોકાઓ.",
+      "transliteration": "Rat pade, thodu bhano, pachi rokaao.",
+      "category": "Time",
+      "generated_at": "2026-11-09T23:26:42.215710"
+    },
+    {
+      "english": "Just after sunrise, it feels new.",
+      "gujarati": "સૂર્યોદય પછી તરત, બધું નવું લાગે.",
+      "transliteration": "Suryaoday pachi tarat, badhu navu lage.",
+      "category": "Time",
+      "generated_at": "2026-11-09T23:26:42.215714"
     }
   ],
-  "last_updated": "2026-11-09T06:24:23.977334"
+  "last_updated": "2026-11-09T23:26:42.215716"
 }
