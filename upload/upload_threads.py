@@ -1,5 +1,5 @@
 """
-Threads Upload - VELOCITY GUJARATI
+Threads Upload - Uses tmpfiles.org for public URL
 """
 
 import os

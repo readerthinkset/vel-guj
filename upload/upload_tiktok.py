@@ -1,5 +1,5 @@
 """
-Upload video to TikTok - VELOCITY GUJARATI
+Upload video to TikTok
 """
 import os
 import requests
