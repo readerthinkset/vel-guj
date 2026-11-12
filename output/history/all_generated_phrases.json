@@ -20929,7 +20929,42 @@
       "transliteration": "sārā mitro khushīne saachi banāve chhe.",
       "category": "Happiness",
       "generated_at": "2026-11-12T19:24:45.179550"
+    },
+    {
+      "english": "It’s raining again, right on time.",
+      "gujarati": "ફરી વરસાદ પડી રહ્યો છે, બિલકુલ સમયસર.",
+      "transliteration": "Phari varsad padi rahyo chhe, bilkul samayasar.",
+      "category": "Weather",
+      "generated_at": "2026-11-12T21:20:59.997574"
+    },
+    {
+      "english": "The clouds look darker, as I walk.",
+      "gujarati": "હું ચાલું છું, ત્યારે વાદળો વધુ અંધારા લાગે છે.",
+      "transliteration": "Hu chalu chhu, tyare vadalo vadhu andhara laage chhe.",
+      "category": "Weather",
+      "generated_at": "2026-11-12T21:20:59.997586"
+    },
+    {
+      "english": "My umbrella is finally getting used.",
+      "gujarati": "મારો છત્રી આખરે વપરાઈ રહ્યો છે.",
+      "transliteration": "Maro chhatri aakhaare vapari rahyo chhe.",
+      "category": "Weather",
+      "generated_at": "2026-11-12T21:20:59.997588"
+    },
+    {
+      "english": "The rain smells fresh, not dirty.",
+      "gujarati": "વરસાદની સુગંધ તાજી લાગે છે.",
+      "transliteration": "Varsadni sugandh taaji laage chhe.",
+      "category": "Weather",
+      "generated_at": "2026-11-12T21:20:59.997589"
+    },
+    {
+      "english": "A few drops started, then more came.",
+      "gujarati": "થોડા ટીપાં પડ્યા, પછી વધારે આવ્યા.",
+      "transliteration": "Thoda tipan padya, pachhi vadhare aavya.",
+      "category": "Weather",
+      "generated_at": "2026-11-12T21:20:59.997590"
     }
   ],
-  "last_updated": "2026-11-12T19:24:45.179552"
+  "last_updated": "2026-11-12T21:20:59.997592"
 }
