@@ -21349,7 +21349,42 @@
       "transliteration": "tamaaru sauthi lokpriy gujarati nashto shu chhe?",
       "category": "Restaurant",
       "generated_at": "2026-11-14T21:04:51.551408"
+    },
+    {
+      "english": "Excuse me, where is this bus stop?",
+      "gujarati": "માફ કરશો, આ બસ સ્ટોપ ક્યાં છે?",
+      "transliteration": "Maaf karsho, aa bas stop kyaan chhe?",
+      "category": "Travel",
+      "generated_at": "2026-11-14T23:31:37.151562"
+    },
+    {
+      "english": "How much is the ticket for two?",
+      "gujarati": "બે લોકો માટે ટિકિટ કેટલી છે?",
+      "transliteration": "Be loko maate ticket ketli chhe?",
+      "category": "Travel",
+      "generated_at": "2026-11-14T23:31:37.151578"
+    },
+    {
+      "english": "Is there a restroom nearby, please?",
+      "gujarati": "ક્યાંક નજીકમાં શૌચાલય છે?",
+      "transliteration": "Kyaank najarmaan shauchalay chhe?",
+      "category": "Travel",
+      "generated_at": "2026-11-14T23:31:37.151579"
+    },
+    {
+      "english": "I’d like water, without ice, please.",
+      "gujarati": "મને પાણી જોઈએ, બરફ વગર, કૃપા કરીને.",
+      "transliteration": "Mane paani joie, baraf vagar, krupaa karine.",
+      "category": "Travel",
+      "generated_at": "2026-11-14T23:31:37.151581"
+    },
+    {
+      "english": "What time does the market open?",
+      "gujarati": "બજાર કેટલા વાગે ખુલ્લું થાય છે?",
+      "transliteration": "Bajaar ketla vaage khulloo thay chhe?",
+      "category": "Travel",
+      "generated_at": "2026-11-14T23:31:37.151582"
     }
   ],
-  "last_updated": "2026-11-14T21:04:51.551410"
+  "last_updated": "2026-11-14T23:31:37.151584"
 }
