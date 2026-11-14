@@ -21244,7 +21244,42 @@
       "transliteration": "Tamārā pag anubhavō, jamīn anubhavō.",
       "category": "Mindfulness",
       "generated_at": "2026-11-14T05:58:29.772548"
+    },
+    {
+      "english": "Hello, welcome to my home.",
+      "gujarati": "નમસ્તે, મારા ઘરે આપનું સ્વાગત છે.",
+      "transliteration": "namaste, maaré ghare aapnu swagat chhe.",
+      "category": "Greetings",
+      "generated_at": "2026-11-14T17:32:26.505740"
+    },
+    {
+      "english": "Hey, how’s your day going?",
+      "gujarati": "હે, તમારો દિવસ કેવો ચાલી રહ્યો છે?",
+      "transliteration": "hey, tamaaro divas kevo chali rahyo chhe?",
+      "category": "Greetings",
+      "generated_at": "2026-11-14T17:32:26.505753"
+    },
+    {
+      "english": "Hi there, hope you feel well.",
+      "gujarati": "નમસ્તે, આશા છે કે તમે સારું અનુભવો છો.",
+      "transliteration": "namaste, aasha chhe ke tame saaru anubhave chho.",
+      "category": "Greetings",
+      "generated_at": "2026-11-14T17:32:26.505755"
+    },
+    {
+      "english": "Greetings, it’s nice to meet you.",
+      "gujarati": "નમસ્કાર, તમને મળીને આનંદ થયો.",
+      "transliteration": "namaskar, tamané madine aanand thayo.",
+      "category": "Greetings",
+      "generated_at": "2026-11-14T17:32:26.505756"
+    },
+    {
+      "english": "Good to see you today, friend.",
+      "gujarati": "આજે તમને જોઈને આનંદ થયો, મિત્ર.",
+      "transliteration": "aaje tamané joi ne aanand thayo, mitra.",
+      "category": "Greetings",
+      "generated_at": "2026-11-14T17:32:26.505758"
     }
   ],
-  "last_updated": "2026-11-14T05:58:29.772550"
+  "last_updated": "2026-11-14T17:32:26.505759"
 }
