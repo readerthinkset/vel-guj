@@ -21314,7 +21314,42 @@
       "transliteration": "kr̥pā karīne thodī volyūm ośī karo",
       "category": "Music",
       "generated_at": "2026-11-14T19:02:46.503768"
+    },
+    {
+      "english": "Hi! How’s the food today?",
+      "gujarati": "નમસ્તે! આજે ભોજન કેવું છે?",
+      "transliteration": "namaste! aaje bhojan jevu chhe?",
+      "category": "Restaurant",
+      "generated_at": "2026-11-14T21:04:51.551394"
+    },
+    {
+      "english": "Do you have Gujarati thali options?",
+      "gujarati": "તમારી પાસે ગુજરાતી થાળી વિકલ્પો છે?",
+      "transliteration": "tamari pase gujarati thali vikalpo chhe?",
+      "category": "Restaurant",
+      "generated_at": "2026-11-14T21:04:51.551405"
+    },
+    {
+      "english": "I’d like a mild curry, please.",
+      "gujarati": "મને થોડી મસાલેદાર નહીં, હળવો કરી આપો.",
+      "transliteration": "mane thodi masaledar nahin, halvo kari apo.",
+      "category": "Restaurant",
+      "generated_at": "2026-11-14T21:04:51.551406"
+    },
+    {
+      "english": "Is the gravy fresh or canned?",
+      "gujarati": "સોસ તાજી છે કે તૈયાર બનાવેલી?",
+      "transliteration": "sos tajI chhe ke taiyar banavelI?",
+      "category": "Restaurant",
+      "generated_at": "2026-11-14T21:04:51.551407"
+    },
+    {
+      "english": "What’s your most popular Gujarati snack?",
+      "gujarati": "તમારું સૌથી લોકપ્રિય ગુજરાતી નાસ્તો શું છે?",
+      "transliteration": "tamaaru sauthi lokpriy gujarati nashto shu chhe?",
+      "category": "Restaurant",
+      "generated_at": "2026-11-14T21:04:51.551408"
     }
   ],
-  "last_updated": "2026-11-14T19:02:46.503769"
+  "last_updated": "2026-11-14T21:04:51.551410"
 }
