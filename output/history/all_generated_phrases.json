@@ -21489,7 +21489,42 @@
       "transliteration": "saral dal, ghar ma garam ane aramdāyak",
       "category": "Food",
       "generated_at": "2026-11-15T19:34:08.046568"
+    },
+    {
+      "english": "Can I see this in person, please?",
+      "gujarati": "શું હું આને વ્યક્તિગત રીતે જોઈ શકું?",
+      "transliteration": "Shu hu aa ne vyaktigat rite joi shakuṁ?",
+      "category": "Shopping",
+      "generated_at": "2026-11-15T21:27:21.257634"
+    },
+    {
+      "english": "Do you have it in stock, today?",
+      "gujarati": "શું આ આજ સ્ટોકમાં છે?",
+      "transliteration": "Shu aa aj stok māṁ chhe?",
+      "category": "Shopping",
+      "generated_at": "2026-11-15T21:27:21.257649"
+    },
+    {
+      "english": "I like this design, how much is it?",
+      "gujarati": "મને આ ડિઝાઇન ગમે છે, કેટલું થાય?",
+      "transliteration": "Mane aa design game chhe, ketaluṁ thāy?",
+      "category": "Shopping",
+      "generated_at": "2026-11-15T21:27:21.257650"
+    },
+    {
+      "english": "Is there a bigger size available here?",
+      "gujarati": "અહીં મોટું સાઇઝ ઉપલબ્ધ છે?",
+      "transliteration": "Ahīṁ motuṁ saīz upalabdha chhe?",
+      "category": "Shopping",
+      "generated_at": "2026-11-15T21:27:21.257651"
+    },
+    {
+      "english": "Do you have it in black too?",
+      "gujarati": "શું આ કાળામાં પણ છે?",
+      "transliteration": "Shu aa kaḷā māṁ paṇ chhe?",
+      "category": "Shopping",
+      "generated_at": "2026-11-15T21:27:21.257652"
     }
   ],
-  "last_updated": "2026-11-15T19:34:08.046570"
+  "last_updated": "2026-11-15T21:27:21.257654"
 }
