@@ -21839,7 +21839,42 @@
       "transliteration": "Tunka vakyo vaparo, kaam chaale.",
       "category": "Confidence",
       "generated_at": "2026-11-17T22:03:29.584649"
+    },
+    {
+      "english": "I have one small cup, please.",
+      "gujarati": "મારે એક નાનો કપ, કૃપા કરીને.",
+      "transliteration": "maare ek naano kap, kripaa karine.",
+      "category": "Numbers",
+      "generated_at": "2026-11-17T23:43:49.582623"
+    },
+    {
+      "english": "Bring two more spoons for tea.",
+      "gujarati": "ચા માટે બે વધુ ચમચા લાવો.",
+      "transliteration": "chaa maate be vadhu chamachaa laavo.",
+      "category": "Numbers",
+      "generated_at": "2026-11-17T23:43:49.582636"
+    },
+    {
+      "english": "We need three tickets for everyone.",
+      "gujarati": "અમને બધા માટે ત્રણ ટિકિટ જોઈએ.",
+      "transliteration": "amane badhaa maate tran tikit joiye.",
+      "category": "Numbers",
+      "generated_at": "2026-11-17T23:43:49.582637"
+    },
+    {
+      "english": "Call me at four, not earlier.",
+      "gujarati": "મને ચાર વાગે ફોન કરો, પહેલાં નહીં.",
+      "transliteration": "mane chaar vaage phon karo, pahelaa nahi.",
+      "category": "Numbers",
+      "generated_at": "2026-11-17T23:43:49.582639"
+    },
+    {
+      "english": "I bought five bananas today, fresh.",
+      "gujarati": "મેં આજે પાંચ કેળાં ખરીદ્યાં, તાજાં.",
+      "transliteration": "mẽ aaje paãch kelã khareedyaa, taajaa.",
+      "category": "Numbers",
+      "generated_at": "2026-11-17T23:43:49.582640"
     }
   ],
-  "last_updated": "2026-11-17T22:03:29.584652"
+  "last_updated": "2026-11-17T23:43:49.582641"
 }
