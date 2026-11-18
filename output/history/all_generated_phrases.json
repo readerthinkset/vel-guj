@@ -21979,7 +21979,42 @@
       "transliteration": "potani saathe pan narm bano.",
       "category": "Wisdom",
       "generated_at": "2026-11-18T19:48:46.475990"
+    },
+    {
+      "english": "Walk straight, then stop at the gate.",
+      "gujarati": "સિધા ચાલો, પછી દરવાજા પાસે થોભો.",
+      "transliteration": "sidhā cālō, pachī daravājā pāsē thōbhō",
+      "category": "Directions",
+      "generated_at": "2026-11-18T21:48:45.018750"
+    },
+    {
+      "english": "Turn right after the tea stall.",
+      "gujarati": "ચા સ્ટોલ પછી જમણે વળો.",
+      "transliteration": "chā sṭōl pachī jamṇē vaḷō",
+      "category": "Directions",
+      "generated_at": "2026-11-18T21:48:45.018763"
+    },
+    {
+      "english": "Turn left, opposite the pharmacy entrance.",
+      "gujarati": "ડ્રગસ્ટોરના પ્રવેશ સામે ડાબે વળો.",
+      "transliteration": "ḍragasṭōranā praveśa sāmē ḍābē vaḷō",
+      "category": "Directions",
+      "generated_at": "2026-11-18T21:48:45.018765"
+    },
+    {
+      "english": "Go ahead, past the school wall.",
+      "gujarati": "આગળ જાઓ, શાળાના વાડા પાછળથી.",
+      "transliteration": "āgaḷ jāō, śāḷānā vāḍā pachhīthī",
+      "category": "Directions",
+      "generated_at": "2026-11-18T21:48:45.018766"
+    },
+    {
+      "english": "Follow the main road, keep moving.",
+      "gujarati": "મુખ્ય રસ્તે ચાલો, આગળ વધતા રહો.",
+      "transliteration": "mukhya rastē cālō, āgaḷ vadhatā rahō",
+      "category": "Directions",
+      "generated_at": "2026-11-18T21:48:45.018768"
     }
   ],
-  "last_updated": "2026-11-18T19:48:46.475992"
+  "last_updated": "2026-11-18T21:48:45.018770"
 }
