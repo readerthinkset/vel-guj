@@ -22154,7 +22154,42 @@
       "transliteration": "have abhyās karo, parinām aavshe.",
       "category": "Success",
       "generated_at": "2026-11-19T19:58:04.420096"
+    },
+    {
+      "english": "The cow moo, quietly in the yard.",
+      "gujarati": "ગાય આંગણે, શાંતિથી મોંઉ કરે છે.",
+      "transliteration": "gāy āngaṇe, śāntithi mounu kare chhe.",
+      "category": "Animals",
+      "generated_at": "2026-11-19T21:59:13.067954"
+    },
+    {
+      "english": "The goat jumps, on the rocky path.",
+      "gujarati": "બકરી કૂદકે છે, પથ્થરીલા રસ્તા પર.",
+      "transliteration": "bakari kūdke chhe, paththarīlā rāstā par.",
+      "category": "Animals",
+      "generated_at": "2026-11-19T21:59:13.067970"
+    },
+    {
+      "english": "The rooster crows, before sunrise each day.",
+      "gujarati": "મોરડો ચીંચિયારે, દરરોજ સૂર્યોદય પહેલાં.",
+      "transliteration": "morḍo cīnchiyāre, darroj sūryodaya pahelā.",
+      "category": "Animals",
+      "generated_at": "2026-11-19T21:59:13.067972"
+    },
+    {
+      "english": "The hen clucks, near the kitchen door.",
+      "gujarati": "મુરગી ખખડાટ કરે છે, રસોડાની બારીએ નજીક.",
+      "transliteration": "muragī khakhḍāṭ kare chhe, rasōḍānī bārīe najīka.",
+      "category": "Animals",
+      "generated_at": "2026-11-19T21:59:13.067973"
+    },
+    {
+      "english": "The dog barks, loudly at the stranger.",
+      "gujarati": "કૂતરો ભસે છે, અજાણ્યા પાસે જોરથી.",
+      "transliteration": "kūṭaro bhase chhe, ajāṇyā pāshe jorathi.",
+      "category": "Animals",
+      "generated_at": "2026-11-19T21:59:13.067975"
     }
   ],
-  "last_updated": "2026-11-19T19:58:04.420098"
+  "last_updated": "2026-11-19T21:59:13.067977"
 }
