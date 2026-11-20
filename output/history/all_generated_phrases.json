@@ -22329,7 +22329,42 @@
       "transliteration": "tenā cheharā par shāntibharyuṁ ātmavishvāsh chhe",
       "category": "Body Parts",
       "generated_at": "2026-11-20T19:29:23.300868"
+    },
+    {
+      "english": "I feel okay right now, actually.",
+      "gujarati": "હું હમણાં જરા ઠીક છું, ખરેખર.",
+      "transliteration": "Hu hamna jara theek chhu, kharekhar.",
+      "category": "Feelings",
+      "generated_at": "2026-11-20T21:41:30.151600"
+    },
+    {
+      "english": "I’m a bit nervous, about the meeting.",
+      "gujarati": "હું થોડો નર્વસ છું, મીટિંગ વિશે.",
+      "transliteration": "Hu thodo nervous chhu, meeting vishe.",
+      "category": "Feelings",
+      "generated_at": "2026-11-20T21:41:30.151615"
+    },
+    {
+      "english": "My heart is racing, for no reason.",
+      "gujarati": "મારું મન થોડું દોડે છે, કોઇ કારણ વગર.",
+      "transliteration": "Maru man thodu dode chhe, koi karan vagar.",
+      "category": "Feelings",
+      "generated_at": "2026-11-20T21:41:30.151616"
+    },
+    {
+      "english": "I feel relaxed, after that long day.",
+      "gujarati": "હું આરામદાયક લાગે છે, એ લાંબા દિવસ પછી.",
+      "transliteration": "Hu aaramdayak lage chhe, ae lamba divas pachi.",
+      "category": "Feelings",
+      "generated_at": "2026-11-20T21:41:30.151617"
+    },
+    {
+      "english": "I’m feeling grateful, for your quick reply.",
+      "gujarati": "હું આભારી છું, તમારા ત્વરિત જવાબ માટે.",
+      "transliteration": "Hu aabhari chhu, tamara tvarit javab mate.",
+      "category": "Feelings",
+      "generated_at": "2026-11-20T21:41:30.151618"
     }
   ],
-  "last_updated": "2026-11-20T19:29:23.300871"
+  "last_updated": "2026-11-20T21:41:30.151620"
 }
