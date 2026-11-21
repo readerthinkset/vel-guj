@@ -22434,7 +22434,42 @@
       "transliteration": "taiyar thay tyare kripya bil lavao.",
       "category": "Restaurant",
       "generated_at": "2026-11-21T01:00:32.584092"
+    },
+    {
+      "english": "Jeera makes the whole meal fragrant.",
+      "gujarati": "જીરું આખું ભોજન સુગંધિત કરે છે.",
+      "transliteration": "jeeru aakhun bhojan sugandhit kare chhe",
+      "category": "Food",
+      "generated_at": "2026-11-21T06:48:36.336587"
+    },
+    {
+      "english": "Coriander leaves brighten every bite.",
+      "gujarati": "ધાણાં પત્તાં દરેક કટકટને તેજ કરે છે.",
+      "transliteration": "dhana pattā darek katkatne tej kare chhe",
+      "category": "Food",
+      "generated_at": "2026-11-21T06:48:36.336604"
+    },
+    {
+      "english": "Garlic tadka wakes up your taste buds.",
+      "gujarati": "લસણ તડકો તમારા સ્વાદ જાગે કરે છે.",
+      "transliteration": "lasan tadko tamara svaad jaage kare chhe",
+      "category": "Food",
+      "generated_at": "2026-11-21T06:48:36.336606"
+    },
+    {
+      "english": "A squeeze of lemon adds zing.",
+      "gujarati": "થોડું લીંબુ નિચોડવાથી સ્વાદમાં ચમક આવે છે.",
+      "transliteration": "thodu limbu nichodthathi svaadman chamak aave chhe",
+      "category": "Food",
+      "generated_at": "2026-11-21T06:48:36.336608"
+    },
+    {
+      "english": "Roasted peanuts bring rich crunch.",
+      "gujarati": "તળેલી શિંગદાણા આપે સમૃદ્ધ કરકરાટ.",
+      "transliteration": "taleli shingdāna aape samriddh karkarāt",
+      "category": "Food",
+      "generated_at": "2026-11-21T06:48:36.336609"
     }
   ],
-  "last_updated": "2026-11-21T01:00:32.584095"
+  "last_updated": "2026-11-21T06:48:36.336612"
 }
