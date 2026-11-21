@@ -22399,7 +22399,42 @@
       "transliteration": "Aa jūṭā mārā pag par halakā lāge chhe.",
       "category": "Clothes",
       "generated_at": "2026-11-20T22:56:57.552000"
+    },
+    {
+      "english": "I’d like to see the menu, please.",
+      "gujarati": "મને મેનુ બતાવશો, કૃપા કરીને.",
+      "transliteration": "mane menu batavsho, kripya.",
+      "category": "Restaurant",
+      "generated_at": "2026-11-21T01:00:32.584066"
+    },
+    {
+      "english": "Do you have vegan options available tonight?",
+      "gujarati": "આજે રાત્રે તમને વેગન વિકલ્પો છે?",
+      "transliteration": "aaje ratre tamne vegan vikalpo chhe?",
+      "category": "Restaurant",
+      "generated_at": "2026-11-21T01:00:32.584085"
+    },
+    {
+      "english": "Can I get water, without ice?",
+      "gujarati": "મને બરફ વગર પાણી મળશે?",
+      "transliteration": "mane barf vagar pani malshe?",
+      "category": "Restaurant",
+      "generated_at": "2026-11-21T01:00:32.584088"
+    },
+    {
+      "english": "Is this dish made with dairy?",
+      "gujarati": "આ વાનગીમાં દૂધ વપરાય છે?",
+      "transliteration": "aa vangi māṁ dudh vapray chhe?",
+      "category": "Restaurant",
+      "generated_at": "2026-11-21T01:00:32.584090"
+    },
+    {
+      "english": "Please bring the bill when ready.",
+      "gujarati": "તૈયાર થાય ત્યારે કૃપા કરીને બીલ લાવો.",
+      "transliteration": "taiyar thay tyare kripya bil lavao.",
+      "category": "Restaurant",
+      "generated_at": "2026-11-21T01:00:32.584092"
     }
   ],
-  "last_updated": "2026-11-20T22:56:57.552002"
+  "last_updated": "2026-11-21T01:00:32.584095"
 }
