@@ -22679,7 +22679,42 @@
       "transliteration": "sutam pahela, aapane vaat kariye.",
       "category": "Relationships",
       "generated_at": "2026-11-22T18:54:30.661575"
+    },
+    {
+      "english": "Please call for emergency help, now.",
+      "gujarati": "કૃપા કરીને તાત્કાલિક મદદ બોલાવો, હવે.",
+      "transliteration": "kripayem tatkalik madad bolavo, have.",
+      "category": "Emergency",
+      "generated_at": "2026-11-22T20:40:17.987916"
+    },
+    {
+      "english": "I have serious bleeding, please help.",
+      "gujarati": "મારું ગંભીર રક્તસ્રાવ છે, કૃપા કરીને મદદ કરો.",
+      "transliteration": "maarum gambhir raktasrav chhe, kripaya madad karo.",
+      "category": "Emergency",
+      "generated_at": "2026-11-22T20:40:17.987931"
+    },
+    {
+      "english": "Someone fainted, call a doctor.",
+      "gujarati": "કોઈ બેભાન થયું છે, ડૉક્ટરને બોલાવો.",
+      "transliteration": "koi behosh thayu chhe, doktor ne bolavo.",
+      "category": "Emergency",
+      "generated_at": "2026-11-22T20:40:17.987932"
+    },
+    {
+      "english": "I fell, my arm hurts a lot.",
+      "gujarati": "હું પડી ગયો, મારું હાથ ઘણી પીડે છે.",
+      "transliteration": "hu padi gayo, maaru haath ghani pīde chhe.",
+      "category": "Emergency",
+      "generated_at": "2026-11-22T20:40:17.987933"
+    },
+    {
+      "english": "Call the ambulance, we need care.",
+      "gujarati": "એમ્બ્યુલન્સ બોલાવો, અમને સારવાર જોઈએ છે.",
+      "transliteration": "ambulans bolavo, amne sarvar joiye chhe.",
+      "category": "Emergency",
+      "generated_at": "2026-11-22T20:40:17.987935"
     }
   ],
-  "last_updated": "2026-11-22T18:54:30.661577"
+  "last_updated": "2026-11-22T20:40:17.987937"
 }
