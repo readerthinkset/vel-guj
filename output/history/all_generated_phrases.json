@@ -22714,7 +22714,42 @@
       "transliteration": "ambulans bolavo, amne sarvar joiye chhe.",
       "category": "Emergency",
       "generated_at": "2026-11-22T20:40:17.987935"
+    },
+    {
+      "english": "Listen to rain, it softens roads.",
+      "gujarati": "વરસાદ સાંભળો, રસ્તા નરમ પડે છે.",
+      "transliteration": "Varasad saambhado, rasta naram pade chhe.",
+      "category": "Nature",
+      "generated_at": "2026-11-22T22:18:44.393741"
+    },
+    {
+      "english": "Wind carries stories between houses quietly.",
+      "gujarati": "પવન ઘરો વચ્ચે, શાંતિથી કહાણીઓ વહેંચે છે.",
+      "transliteration": "Pavan gharo vachche, shaantithi kahaniyo vechhe chhe.",
+      "category": "Nature",
+      "generated_at": "2026-11-22T22:18:44.393762"
+    },
+    {
+      "english": "The river laughs, over smooth stones.",
+      "gujarati": "નદી હસે છે, છૂટક પથ્થરો ઉપર.",
+      "transliteration": "Nadi hase chhe, chhutak paththaro upar.",
+      "category": "Nature",
+      "generated_at": "2026-11-22T22:18:44.393766"
+    },
+    {
+      "english": "Sunrise paints the sky, gently orange.",
+      "gujarati": "સૂર્યોદય આકાશ રંગે, નરમ નારંગી.",
+      "transliteration": "Suryaoday aakash range, naram naarangi.",
+      "category": "Nature",
+      "generated_at": "2026-11-22T22:18:44.393768"
+    },
+    {
+      "english": "Moonlight rests on quiet roofs at night.",
+      "gujarati": "ચાંદની રાતે શાંત છાપરાં પર પડે છે.",
+      "transliteration": "Chandani raate shaant chhaparaa par pade chhe.",
+      "category": "Nature",
+      "generated_at": "2026-11-22T22:18:44.393770"
     }
   ],
-  "last_updated": "2026-11-22T20:40:17.987937"
+  "last_updated": "2026-11-22T22:18:44.393772"
 }
