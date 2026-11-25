@@ -23134,7 +23134,42 @@
       "transliteration": "huṁ najīka kām karuṁ chuṁ, huṁ jāī rahyo chuṁ.",
       "category": "Basic Phrases",
       "generated_at": "2026-11-25T03:17:27.509670"
+    },
+    {
+      "english": "How much does this cost, sir?",
+      "gujarati": "આની કિંમત કેટલી છે, સાહેબ?",
+      "transliteration": "aa ni kimat ketli chhe, saahab?",
+      "category": "Shopping",
+      "generated_at": "2026-11-25T08:05:55.022806"
+    },
+    {
+      "english": "Do you have it in red?",
+      "gujarati": "શું આ લાલ રંગમાં મળે છે?",
+      "transliteration": "shoo aa laal rang maa male chhe?",
+      "category": "Shopping",
+      "generated_at": "2026-11-25T08:05:55.022819"
+    },
+    {
+      "english": "Can I get a new one?",
+      "gujarati": "શું મને નવું એક આપી શકશો?",
+      "transliteration": "shoo mane navu ek api shaksho?",
+      "category": "Shopping",
+      "generated_at": "2026-11-25T08:05:55.022821"
+    },
+    {
+      "english": "Is it made from cotton?",
+      "gujarati": "શું તે કપાસનું બનાવેલ છે?",
+      "transliteration": "shoo te kapaas nu banavel chhe?",
+      "category": "Shopping",
+      "generated_at": "2026-11-25T08:05:55.022822"
+    },
+    {
+      "english": "Does this include tax, please?",
+      "gujarati": "આમાં ટેક્સ સામેલ છે, કૃપા કરીને?",
+      "transliteration": "aama tax saamel chhe, krupaa karine?",
+      "category": "Shopping",
+      "generated_at": "2026-11-25T08:05:55.022824"
     }
   ],
-  "last_updated": "2026-11-25T03:17:27.509672"
+  "last_updated": "2026-11-25T08:05:55.022826"
 }
