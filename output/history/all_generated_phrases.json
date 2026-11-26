@@ -23309,7 +23309,42 @@
       "transliteration": "Ek oondho shvaas lo, aaram karo.",
       "category": "Health",
       "generated_at": "2026-11-26T02:34:09.590546"
+    },
+    {
+      "english": "A cat naps, in the warm sun.",
+      "gujarati": "બિલાડી ગરમ સૂર્યમાં, સુવે છે.",
+      "transliteration": "bilāḍī garam sūryamāṁ, suve chhe.",
+      "category": "Animals",
+      "generated_at": "2026-11-26T07:56:01.525475"
+    },
+    {
+      "english": "The dog trots, beside its owner.",
+      "gujarati": "કૂતરો માલિકની બાજુમાં, ટહુકે છે.",
+      "transliteration": "kūtro māliknī bājumāṁ, ṭahuke chhe.",
+      "category": "Animals",
+      "generated_at": "2026-11-26T07:56:01.525488"
+    },
+    {
+      "english": "A horse neighs, at the stable gate.",
+      "gujarati": "ઘોડો ખોળા દરવાજે, હિણીયે છે.",
+      "transliteration": "ghōḍō khoḷā darvāje, hiṇīye chhe.",
+      "category": "Animals",
+      "generated_at": "2026-11-26T07:56:01.525490"
+    },
+    {
+      "english": "The cow walks, slowly down the lane.",
+      "gujarati": "ગાય લેન નીચે, ધીમે ચાલે છે.",
+      "transliteration": "gāy leṇ nīche, dhīme cāḷe chhe.",
+      "category": "Animals",
+      "generated_at": "2026-11-26T07:56:01.525491"
+    },
+    {
+      "english": "A goat chews, calmly near the fence.",
+      "gujarati": "બકરો વાડા પાસે, શાંતિથી ચાવે છે.",
+      "transliteration": "baka ro vāḍā pāsē, śāntithī cāve chhe.",
+      "category": "Animals",
+      "generated_at": "2026-11-26T07:56:01.525492"
     }
   ],
-  "last_updated": "2026-11-26T02:34:09.590548"
+  "last_updated": "2026-11-26T07:56:01.525494"
 }
