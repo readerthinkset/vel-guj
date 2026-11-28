@@ -23477,7 +23477,28 @@
       "transliteration": "ડર pasār thavā do, aṭkashō nai.",
       "category": "Courage",
       "generated_at": "2026-11-28T03:48:20.600332"
+    },
+    {
+      "english": "What time is it right now, please?",
+      "gujarati": "હમણાં કેટલા વાગ્યા છે, કૃપા કરીને?",
+      "transliteration": "Hamanā ketalā vāgyā chē, krupā karīne?",
+      "category": "Time",
+      "generated_at": "2026-11-28T11:36:57.442469"
+    },
+    {
+      "english": "I’ll be there in ten minutes.",
+      "gujarati": "હું દસ મિનિટમાં આવી જાઉં છું.",
+      "transliteration": "Huṁ das miṇiṭamā āvī jāuṁ chuṁ.",
+      "category": "Time",
+      "generated_at": "2026-11-28T11:36:57.442483"
+    },
+    {
+      "english": "Please call me after 5 p.m.",
+      "gujarati": "કૃપા કરીને સાંજે પાંચ પછી મને ફોન કરો.",
+      "transliteration": "Krupā karīne sānjē pān̄ch pachī mane fon karo.",
+      "category": "Time",
+      "generated_at": "2026-11-28T11:36:57.442485"
     }
   ],
-  "last_updated": "2026-11-28T03:48:20.600334"
+  "last_updated": "2026-11-28T11:36:57.442486"
 }
